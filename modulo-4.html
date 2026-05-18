@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Módulo 4 — Academia Gado Certo</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <style>
+    .coming-soon-wrap {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; min-height: calc(100vh - 70px);
+      text-align: center; padding: 3rem 2rem;
+    }
+    .coming-soon-icon { font-size: 4rem; margin-bottom: 1.5rem; }
+    .coming-soon-wrap h1 { font-size: 2rem; font-weight: 900; margin-bottom: 0.75rem; }
+    .coming-soon-wrap h1 em { font-style: normal; color: var(--orange); }
+    .coming-soon-wrap p { color: var(--gray); max-width: 480px; margin: 0 auto 2rem; font-size: 0.95rem; }
+    .preview-topics {
+      list-style: none; background: var(--black-card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.5rem 2rem; margin: 0 auto 2rem;
+      max-width: 400px; text-align: left;
+    }
+    .preview-topics li {
+      font-size: 0.85rem; color: var(--gray-light); padding: 0.4rem 0;
+      border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.5rem;
+    }
+    .preview-topics li:last-child { border-bottom: none; }
+    .preview-topics li::before { content: '🔒'; font-size: 0.7rem; }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <img src="assets/logo.png" alt="Gado Certo" />
+        <div class="logo-text">Academia Gado Certo <span>Treinamento Interno</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="modulo-1.html">Módulo 1</a></li>
+        <li><a href="https://script.google.com/macros/s/AKfycbxOD1wcf5c_QdRE5Ip-GUxKuM74ZlF1mr5jHVO_xcgZ3W2bMSboMw-E0bTqbYvNx8rB/exec" target="_blank">Testes</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="coming-soon-wrap">
+    <div class="coming-soon-icon">🏗️</div>
+    <div class="hero-badge" style="margin-bottom:1.5rem">Módulo 04 · Em desenvolvimento</div>
+    <h1>Inteligência de <em>Mercado</em></h1>
+    <p>Leitura de ciclo pecuário, formação de preços e antecipação de movimentos do mercado para operar sempre à frente.</p>
+    <ul class="preview-topics">
+      <li>Leitura do ciclo pecuário</li>
+      <li>Formação de preços e ágio</li>
+      <li>Indicadores de mercado (CEPEA, B3)</li>
+      <li>Antecipação de oportunidades</li>
+    </ul>
+    <a href="modulo-1.html" class="btn btn-primary">Voltar ao Módulo 1 →</a>
+  </div>
+
+  <footer class="footer">
+    <p>Academia <strong>Gado Certo</strong> · Uso interno · Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
