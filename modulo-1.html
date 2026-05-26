@@ -6,6 +6,45 @@
   <title>Módulo 1 — Academia Gado Certo</title>
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" type="image/png" href="assets/logo.png" />
+  <style>
+    /* Visuais inline (diagrama de ciclos e mapas) */
+    .visual-block {
+      margin: 28px 0 32px;
+      padding: 20px 16px;
+      background: #faf7f1;
+      border: 1px solid #e8e1d3;
+      border-radius: 12px;
+    }
+    .visual-block svg { display: block; width: 100%; height: auto; max-width: 720px; margin: 0 auto; }
+    .visual-block .th { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 600; fill: #0b0c0e; }
+    .visual-block .ts { font-family: 'Montserrat', sans-serif; font-size: 11px; fill: #584e41; }
+    .visual-block svg text { font-family: 'Montserrat', sans-serif; }
+    .visual-caption {
+      text-align: center;
+      font-size: 13px;
+      color: #584e41;
+      font-style: italic;
+      margin-top: 8px;
+    }
+    /* Imagens de raças */
+    .breed-img {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 14px 0 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+    }
+    /* Cores das caixas do diagrama de ciclos */
+    .visual-block .c-teal rect { fill: #E1F5EE; stroke: #1D9E75; }
+    .visual-block .c-teal text.th { fill: #085041; }
+    .visual-block .c-amber rect { fill: #FAEEDA; stroke: #BA7517; }
+    .visual-block .c-amber text.th { fill: #633806; }
+    .visual-block .c-coral rect { fill: #FAECE7; stroke: #993C1D; }
+    .visual-block .c-coral text.th { fill: #4A1B0C; }
+  </style>
 </head>
 <body>
 
@@ -62,330 +101,497 @@
 
       <!-- 1.1 FUNDAMENTOS RACIAIS -->
       <section class="section-block" id="s1-1">
-        <h2>1.1 Fundamentos Raciais</h2>
+        <h2>1.1 Fundamentos Raciais: A Dualidade da Pecuária (Indicus vs. Taurus)</h2>
         <p>No cenário da pecuária global, e especialmente na brasileira, o sucesso do negócio começa na escolha genética correta para cada ambiente e objetivo de mercado. Entender a distinção entre as subespécies de gado bovino não é apenas uma questão de zoologia, mas de <strong>estratégia financeira e eficiência produtiva</strong>.</p>
 
-        <h3>Bos Indicus (Zebuínos) — A Resistência do Trópico</h3>
+        <h3>1.1.1 Bos Indicus (Zebuínos): A Resistência do Trópico</h3>
         <ul>
           <li><strong>Origem:</strong> Sul da Ásia (Índia). Selecionados por milênios para suportar calor extremo, longas caminhadas e forragens fibrosas.</li>
-          <li><strong>Chegada ao Brasil:</strong> As primeiras importações começaram em 1868 (Bahia), com grande expansão nas décadas de 1910 e 1960.</li>
+          <li><strong>Chegada ao Brasil:</strong> As primeiras importações começaram em 1868 (Bahia), mas a grande explosão ocorreu nas décadas de 1910 e 1960 com as importações históricas da Índia.</li>
           <li><strong>Características Chave:</strong> Presença do cupim (reserva de gordura e energia), barbela desenvolvida, orelhas longas e pele pigmentada com alta densidade de glândulas sudoríparas.</li>
-          <li><strong>Vantagem Estratégica:</strong> Alta resistência ao calor, tolerância natural a ectoparasitas (carrapatos e mosca-do-chifre) e eficiência na digestão de pastagens tropicais de menor qualidade.</li>
-          <li><strong>Papel no Portfólio:</strong> É o "gado de guerra", ideal para cria e recria em pastagens extensivas sob sol forte.</li>
+          <li><strong>A Vantagem Estratégica:</strong> Alta resistência ao calor, tolerância natural a ectoparasitas (carrapatos e mosca-do-chifre) e eficiência na digestão de pastagens tropicais de menor qualidade.</li>
+          <li><strong>O Papel no Portfólio:</strong> É o "gado de guerra", ideal para a fase de cria e recria em pastagens extensivas sob sol forte.</li>
         </ul>
 
-        <h3>1.1.2 Nelore — O Soberano</h3>
+        <h3>1.1.2 Nelore (O Soberano)</h3>
         <ul>
-          <li><strong>Origem:</strong> Região de Ongole, Índia. Dominou o Centro-Oeste e o Norte a partir das décadas de 1970 e 1980.</li>
-          <li><strong>Mato Grosso:</strong> Representa ~90% do rebanho mato-grossense (aprox. 30,6 milhões de cabeças de um total de ~34 milhões).</li>
-          <li><strong>Rondônia:</strong> Base absoluta, compondo ~85% do rebanho rondoniense (~14,5 milhões de cabeças).</li>
-          <li><strong>Por que domina:</strong> É o animal que melhor se adaptou ao regime de calor contínuo e grandes extensões de pasto da Amazônia Legal e do Cerrado.</li>
-          <li><strong>Destaque 2026:</strong> O Nelore Pintado tem ganhado valorização astronômica no mercado de elite, com recordes em leilões e na Expozebu 2026.</li>
+          <li><strong>Histórico &amp; Origem:</strong> Originário da região de Ongole, na Índia. Entrou no Brasil no final do século XIX, mas dominou o Centro-Oeste e o Norte a partir das décadas de 1970 e 1980, impulsionado pela abertura das fronteiras agrícolas.</li>
+          <li><strong>Estimativa de Rebanho:</strong>
+            <ul>
+              <li>Mato Grosso: Representa cerca de 90% do rebanho mato-grossense (aproximadamente 30,6 milhões de cabeças do rebanho total de ~34 milhões).</li>
+              <li><strong>Rondônia:</strong> Base absoluta de sustentação, compondo cerca de 85% do rebanho rondoniense (aproximadamente 14,5 milhões de cabeças do total estadual de ~17 milhões).</li>
+            </ul>
+          </li>
+          <li><strong>Por que domina o mercado local:</strong> É o animal que melhor se adaptou ao regime de calor contínuo e grandes extensões de pasto da Amazônia Legal e do Cerrado.</li>
+          <li><strong>Destaque 2026:</strong> O Nelore Pintado tem ganhado uma valorização astronômica no mercado de elite e genética, com recordes recentes de preços em leilões e grandes campeonatos na Expozebu 2026.</li>
         </ul>
+        <img src="Nelore.png" alt="Nelore" class="breed-img"/>
 
         <h3>1.1.3 Brahman</h3>
         <ul>
-          <li><strong>Origem:</strong> Desenvolvido nos EUA no início do século XX, cruzando Guzerá, Nelore, Gir e Krishna Valley. Chegou ao Brasil em 1994.</li>
-          <li><strong>Diferencial:</strong> Musculatura mais robusta que o Nelore, usado para dar "choque de sangue" em plantéis que precisam de ganho de peso precoce sem perder a rusticidade zebuína.</li>
+          <li><strong>Histórico &amp; Origem:</strong> Desenvolvido nos Estados Unidos no início do século XX a partir do cruzamento de quatro raças zebuínas indianas (Guzerá, Nelore, Gir e Krishna Valley). Chegou ao Brasil em 1994, após a abertura das importações americanas.</li>
+          <li><strong>Entrada no MT/RO:</strong> Ganhou força nos anos 2000. No MT e em RO, destaca-se em projetos de cruzamento por sua alta capacidade de carcaça e excelente docilidade no manejo.</li>
+          <li><strong>Diferencial:</strong> Musculatura mais robusta que o Nelore tradicional, sendo muito utilizado para dar "choque de sangue" em plantéis que precisam de ganho de peso precoce sem perder a casca rústica do zebuíno.</li>
         </ul>
+        <img src="Brahman.png" alt="Brahman" class="breed-img"/>
 
         <h3>1.1.4 Tabapuã</h3>
         <ul>
-          <li><strong>Origem:</strong> O "Zebu Brasileiro", formado em São Paulo a partir da década de 1940, base de Nelore, Guzerá e Gir mochos.</li>
-          <li><strong>Diferencial:</strong> É gado mocho (sem chifres) por natureza — reduz acidentes no curral, facilita o transporte e diminui o estresse na apartação.</li>
+          <li><strong>Histórico &amp; Origem:</strong> É o "Zebu Brasileiro", formado no estado de São Paulo (Fazenda Água Milagrosa) a partir da década de 1940, utilizando uma base de gado Nelore, Guzerá e Gir mochos.</li>
+          <li><strong>Entrada no MT/RO:</strong> Introduzido a partir dos anos 1980. No Mato Grosso e nas regiões de cria de Rondônia, é altamente valorizado pelo excelente ganho de peso a pasto e pela habilidade materna das vacas.</li>
+          <li><strong>Diferencial:</strong> É um gado mocho (sem chifres) por natureza, o que reduz drasticamente os acidentes no curral, facilita o transporte em caminhões e diminui o estresse no manejo de apartação.</li>
         </ul>
+        <img src="Tabapua.png" alt="Tabapuã" class="breed-img"/>
 
         <h3>1.1.5 Guzerá</h3>
         <ul>
-          <li><strong>Origem:</strong> Região de Kankrej, Índia. Primeira raça zebuína a chegar ao Brasil de forma estruturada, em 1870.</li>
-          <li><strong>Diferencial:</strong> Considerado o "trator" do semiárido pela resistência extrema à seca. Muito utilizado em cruzamentos para produção de fêmeas F1 rústicas com alta capacidade leiteira (Guzolando).</li>
+          <li><strong>Histórico &amp; Origem:</strong> Originário da região desértica de Kankrej, na Índia. Foi a primeira raça zebuína a chegar ao Brasil de forma estruturada, ainda em 1870. No Mato Grosso, foi fundamental no início do século XX para "azebuar" o gado antigo da região.</li>
+          <li><strong>Diferencial:</strong> Considerado o "trator" do semiárido pela sua resistência extrema à seca. No MT e RO, é amplamente utilizado em cruzamentos para a produção de fêmeas F1 rústicas e com alta capacidade leiteira (Guzolando) ou para imprimir estrutura óssea pesada nos bezerros de corte.</li>
         </ul>
+        <img src="Guzera.png" alt="Guzerá" class="breed-img"/>
 
-        <h3>1.1.6 Gir — Foco em Leite e Cruzamento</h3>
+        <h3>1.1.6 Gir (Foco em Leite e Cruzamento)</h3>
         <ul>
-          <li><strong>Origem:</strong> Península de Kathiawar, Índia. Importado em larga escala para o Brasil a partir de 1906.</li>
-          <li><strong>Papel no MT/RO:</strong> O Gir Leiteiro é a base essencial para a formação do Girolando, garantindo o abastecimento das bacias leiteiras de Cuiabá e das pequenas propriedades rondonienses.</li>
+          <li><strong>Histórico &amp; Origem:</strong> Originário da península de Kathiawar, na Índia. Importado em larga escala para o Brasil a partir de 1906. Embora o MT e RO tenham focos majoritários em corte, o Gir Leiteiro é a base essencial para a formação do Girolando, garantindo o abastecimento e a sustentabilidade das bacias leiteiras das regiões de Campo Grande/Cuiabá e das pequenas propriedades rondonienses.</li>
         </ul>
+        <img src="GIR_leiteiro.png" alt="Gir Leiteiro" class="breed-img"/>
 
-        <h3>1.1.7 Bos Taurus (Taurinos) — A Excelência da Carcaça</h3>
+        <h3>1.1.7 Bos Taurus (Taurinos): A Excelência da Carcaça</h3>
         <ul>
-          <li><strong>Origem:</strong> Europa e Ásia. Evoluíram em ambientes de clima temperado.</li>
-          <li><strong>Chegada ao Brasil:</strong> Os primeiros taurinos chegaram com os colonizadores em 1534. Raças modernas (Angus, Hereford, Simental) entraram a partir do início do século XX.</li>
-          <li><strong>Vantagem Estratégica:</strong> Precocidade sexual extrema, acabamento rápido de carcaça, maior deposição de gordura intramuscular (mármore) e carne com fibras finas e macias.</li>
-          <li><strong>Papel no Portfólio:</strong> Gado de altíssimo valor agregado. Exige nutrição de ponta (confinamento ou semiconfinamento) e é favorito dos frigoríficos que exportam para mercados premium.</li>
+          <li><strong>Origem:</strong> Europa e Ásia. Evoluíram por milênios em ambientes de clima temperado e frio.</li>
+          <li><strong>Chegada ao Brasil:</strong> Os primeiros taurinos (de origem ibérica) chegaram com os colonizadores em 1534. As raças britânicas e continentais modernas (Angus, Hereford, Simental) entraram a partir do início do século XX, concentrando-se inicialmente no Sul do país.</li>
+          <li><strong>Características Chave:</strong> Ausência de cupim, couro mais grosso, pelo mais denso e carcaça mais compacta, com alta deposição de tecido muscular.</li>
+          <li><strong>A Vantagem Estratégica:</strong> Precocidade sexual extrema, acabamento rápido de carcaça, maior deposição de gordura intramuscular (mármore) e carne com fibras finas e macias.</li>
+          <li><strong>O Papel no Portfólio:</strong> É o gado focado em altíssimo valor agregado. Exige nutrição de ponta (sempre associado ao confinamento ou semiconfinamento no Centro-Oeste) e é o favorito para atender frigoríficos que exportam para mercados premium e cotas internacionais.</li>
         </ul>
 
         <div class="highlight-card">
-          <div class="label">🔑 Chave do Vendedor GC</div>
-          <p>No Mato Grosso e em Rondônia, a presença de raças taurinas é estritamente estratégica e focada no <strong>Cruzamento Industrial via IATF</strong>. O choque de sangue (heterose) entrega o animal perfeito: a resistência zebuína + a precocidade taurina.</p>
+          <div class="label">🔑 1.1.8 A "Chave do Vendedor GC": O Cruzamento Industrial e o Cenário Local</div>
+          <p>O consultor de alta performance deve entender que no Mato Grosso e em Rondônia, a presença de raças taurinas é estritamente estratégica e focada no <strong>Cruzamento Industrial via IATF</strong> (Inseminação Artificial em Tempo Fixo). Como o clima de estados como MT e RO é desafiador (calor intenso e pressão de parasitas), o choque de sangue (heterose) entrega o animal perfeito: união da resistência zebuína com a precocidade taurina.</p>
         </div>
 
         <h3>1.1.9 Angus (Aberdeen Angus)</h3>
         <ul>
-          <li><strong>Origem:</strong> Escócia. Entrou no Brasil em 1906 pelo Rio Grande do Sul. Ficou restrito ao Sul até os anos 2000, quando a tecnologia de IATF mudou tudo.</li>
-          <li><strong>No MT/RO:</strong> É a raça taurina líder em sêmen comercializado. Lotes de cruzamento F1 Angus/Nelore movimentam +2,5 a 3 milhões de cabeças/ano só na engorda do MT.</li>
-          <li><strong>Vantagem Comercial:</strong> Precocidade extrema e acabamento de gordura exigido pelos frigoríficos (Protocolo Carne Angus Certificada). Antecipa o giro do caixa do produtor.</li>
+          <li><strong>Histórico &amp; Origem:</strong> Originário dos condados de Aberdeenshire e Angus, na Escócia. Entrou no Brasil em 1906 pelo Rio Grande do Sul. Durante quase um século ficou restrito ao Sul devido ao clima. Sua história mudou radicalmente nos anos 2000 com a tecnologia da IATF.</li>
+          <li><strong>Estimativa no MT/RO:</strong> É a raça taurina líder disparada em sêmen comercializado. Estima-se que os lotes de cruzamento F1 Angus/Nelore movimentem mais de 2,5 a 3 milhões de cabeças por ano na engorda e confinamento do Mato Grosso, com crescimento acelerado nos polos de confinamento de Rondônia.</li>
+          <li><strong>Vantagem Comercial:</strong> Precocidade extrema e acabamento de gordura exigido pelos frigoríficos (Protocolo Carne Angus Certificada). O produtor do MT/RO busca o Angus para antecipar o giro do caixa e garantir o bônus financeiro na balança industrial.</li>
         </ul>
+        <img src="Angus.png" alt="Angus" class="breed-img"/>
 
-        <h3>1.1.10 Senepol — O Taurino Adaptado</h3>
+        <h3>1.1.10 Senepol (O Taurino Adaptado)</h3>
         <ul>
-          <li><strong>Origem:</strong> Caribe (Ilha de Saint Croix). Chegou ao Brasil em 2000.</li>
-          <li><strong>Diferencial único:</strong> É o único taurino puro capaz de realizar monta natural a campo sob o calor de 40°C do MT e RO. Solução perfeita para quem quer qualidade taurina sem estrutura para IATF.</li>
+          <li><strong>Histórico &amp; Origem:</strong> Desenvolvido no Caribe (Ilha de Saint Croix) no início do século XX, cruzando a raça N'Dama (africana) com Red Poll (britânica). Chegou ao Brasil em 2000.</li>
+          <li><strong>Aplicação no MT/RO:</strong> É o único taurino puro que consegue realizar monta natural a campo sob o calor de 40°C do Mato Grosso e de Rondônia. É a solução perfeita para o pecuarista que deseja produzir bezerros de qualidade taurina, mas não possui estrutura para fazer inseminação artificial (IATF).</li>
         </ul>
+        <img src="Senepol.png" alt="Senepol" class="breed-img"/>
 
-        <h3>1.1.11 Brangus e Braford (Sintéticos)</h3>
+        <h3>1.1.11 Brangus e Braford (Sintéticos / Compostos)</h3>
         <ul>
-          <li><strong>Origem:</strong> Américas (meados do século XX), fundindo raças britânicas com Zebu (geralmente 5/8 Taurino + 3/8 Zebu).</li>
-          <li><strong>Destaque Local:</strong> O Brangus é uma "raça de guerra" no Médio-Norte, Araguaia e nos solos pesados de Rondônia — entrega o ganho e o mármore do Angus sem sofrer com a pressão de carrapatos do bioma tropical.</li>
+          <li><strong>Histórico &amp; Origem:</strong> Desenvolvidos nas Américas (meados do século XX) fundindo raças britânicas com o Zebu (geralmente 5/8 Taurino e 3/8 Zebu). Consolidaram-se fortemente no MT a partir dos anos 1990.</li>
+          <li><strong>Destaque Local:</strong> O Brangus consolidou-se como uma verdadeira "raça de guerra" nas regiões do Médio-Norte, Araguaia e nos solos mais pesados de Rondônia. Garante o ganho de peso e o mármore do Angus sem sofrer com a pressão severa de carrapatos do bioma tropical.</li>
         </ul>
+        <img src="Brangus.png" alt="Brangus" class="breed-img"/>
 
         <h3>1.1.12 Simental</h3>
         <ul>
-          <li><strong>Origem:</strong> Vale do Rio Simme, Suíça. Chegou ao Brasil em 1904.</li>
-          <li><strong>No MT:</strong> A linhagem sul-africana (Simental Simbrasil) se destaca por dar porte, comprimento de carcaça e muito peso na balança aos bezerros de reposição.</li>
+          <li><strong>Histórico &amp; Origem:</strong> Originário do Vale do Rio Simme, na Suíça. Chegou ao Brasil em 1904. No Centro-Oeste, a linhagem sul-africana (Simental Simbrasil) foi a que melhor se adaptou. No MT, destaca-se por dar porte, comprimento de carcaça e muito peso na balança aos bezerros de reposição.</li>
         </ul>
+        <img src="Simental.png" alt="Simental" class="breed-img"/>
 
-        <h3>1.1.13 Caracu e Pantaneiro — Raças Crioulas</h3>
+        <h3>1.1.13 Caracu e Pantaneiro (Raças Crioulas / Adaptadas)</h3>
         <ul>
-          <li><strong>Caracu:</strong> Taurino ibérico com mais de 400 anos de seleção natural nos cerrados brasileiros. Entrega rusticidade máxima, longevidade e alta habilidade materna.</li>
-          <li><strong>Pantaneiro:</strong> Raça nativa, patrimônio genético do Pantanal Mato-Grossense. Único animal do mundo capaz de suportar a alternância severa de meses de inundação e seca extrema. Cascos adaptados à umidade.</li>
+          <li><strong>Caracu:</strong> Taurino ibérico trazido pelos colonizadores portugueses. Passou por mais de 400 anos de seleção natural nos cerrados brasileiros. Entrega rusticidade máxima, longevidade e é muito buscado para produzir fêmeas de reposição com alta habilidade materna.</li>
+          <li><strong>Pantaneiro:</strong> Raça nativa e patrimônio genético do Pantanal Mato-Grossense. É o único animal do mundo capaz de suportar as alternâncias severas de meses de inundação e meses de seca estrita. Possui cascos extremamente duros e adaptados à umidade, sendo essencial para manter a pecuária sustentável daquela região ecológica.</li>
         </ul>
+        <img src="Caracu.png" alt="Caracu" class="breed-img"/>
+        <img src="Pantaneiro.png" alt="Pantaneiro" class="breed-img"/>
       </section>
 
       <!-- 1.2 CICLOS E MERCADOS -->
       <section class="section-block" id="s1-2">
-        <h2>1.2 Ciclos e Mercados</h2>
+        <h2>1.2 – Ciclos e Mercados: A Engrenagem do Lucro</h2>
         <p>A pecuária de corte é dividida em três fases principais. O vendedor de elite identifica em qual fase o cliente está para oferecer a solução de liquidez (venda) ou de reposição (compra) correta.</p>
 
-        <h3>1.2.1 Cria — A Fábrica de Bezerros</h3>
+        <div class="visual-block">
+          <svg viewBox="0 0 680 360" role="img" aria-label="Diagrama do ciclo pecuário">
+            <defs>
+              <marker id="arr-cycles" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M2 1L8 5L2 9" fill="none" stroke="#73726c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </marker>
+            </defs>
+            <g class="c-teal">
+              <rect x="40" y="60" width="170" height="120" rx="12" stroke-width="0.5"/>
+              <text class="th" x="125" y="92" text-anchor="middle">Cria</text>
+              <text class="ts" x="125" y="115" text-anchor="middle">Fábrica de bezerros</text>
+              <text class="ts" x="125" y="148" text-anchor="middle">7 a 9 meses</text>
+              <text class="ts" x="125" y="165" text-anchor="middle">até a desmama</text>
+            </g>
+            <g class="c-amber">
+              <rect x="255" y="60" width="170" height="120" rx="12" stroke-width="0.5"/>
+              <text class="th" x="340" y="92" text-anchor="middle">Recria</text>
+              <text class="ts" x="340" y="115" text-anchor="middle">Estirão do animal</text>
+              <text class="ts" x="340" y="148" text-anchor="middle">12 a 24 meses</text>
+              <text class="ts" x="340" y="165" text-anchor="middle">de ganho de peso</text>
+            </g>
+            <g class="c-coral">
+              <rect x="470" y="60" width="170" height="120" rx="12" stroke-width="0.5"/>
+              <text class="th" x="555" y="92" text-anchor="middle">Engorda</text>
+              <text class="ts" x="555" y="115" text-anchor="middle">Terminação</text>
+              <text class="ts" x="555" y="148" text-anchor="middle">90 a 120 dias</text>
+              <text class="ts" x="555" y="165" text-anchor="middle">em confinamento</text>
+            </g>
+            <line x1="218" y1="120" x2="247" y2="120" stroke="#73726c" stroke-width="1.5" marker-end="url(#arr-cycles)"/>
+            <text class="ts" x="232" y="108" text-anchor="middle">bezerro</text>
+            <line x1="433" y1="120" x2="462" y2="120" stroke="#73726c" stroke-width="1.5" marker-end="url(#arr-cycles)"/>
+            <text class="ts" x="447" y="108" text-anchor="middle">boi magro</text>
+            <line x1="40" y1="220" x2="640" y2="220" stroke="#d9d4c5" stroke-width="0.5"/>
+            <text class="ts" x="40" y="244" font-weight="500">Oportunidade GC em cada fase</text>
+            <text class="ts" x="125" y="276" text-anchor="middle">Escoar lotes de bezerros</text>
+            <text class="ts" x="125" y="293" text-anchor="middle">e trazer matrizes prenhes</text>
+            <text class="ts" x="340" y="276" text-anchor="middle">Localizar bezerros de qualidade</text>
+            <text class="ts" x="340" y="293" text-anchor="middle">com frete viável</text>
+            <text class="ts" x="555" y="276" text-anchor="middle">Conectar terminador ao</text>
+            <text class="ts" x="555" y="293" text-anchor="middle">recriador certo</text>
+            <text class="ts" x="340" y="335" text-anchor="middle" font-style="italic">Sistema de vasos comunicantes: o preço de uma fase puxa as outras</text>
+          </svg>
+          <p class="visual-caption">As três fases da pecuária de corte e a oportunidade Gado Certo em cada uma</p>
+        </div>
+
+        <h3>1.2.1 Cria: A Fábrica de Bezerros</h3>
+        <p>É o início de tudo. O pecuarista mantém um rebanho de matrizes (vacas) para produzir e vender bezerros.</p>
         <ul>
-          <li><strong>Ativo:</strong> Vacas, touros e bezerros de desmame.</li>
+          <li><strong>O Ativo:</strong> Vacas, touros e bezerros de desmame.</li>
           <li><strong>Duração:</strong> Da concepção à desmama (aprox. 7 a 9 meses após o nascimento).</li>
-          <li><strong>A "Dor" do Criador:</strong> Fluxo de caixa lento — ele "colhe" uma vez por ano e depende muito do preço do bezerro no mercado.</li>
-          <li><strong>Oportunidade GC:</strong> Ajudar o criador a escoar grandes lotes de bezerros padronizados para recriadores, aumentando a valorização e capilaridade de compradores mostrando o gado uma única vez. Também trazer reposição de matrizes prenhes e paridas.</li>
+          <li><strong>A "Dor" do Criador:</strong> O fluxo de caixa é lento (ele "colhe" uma vez por ano). Ele depende muito do preço do bezerro no mercado.</li>
+          <li><strong>Oportunidade GC:</strong> Ajudar o criador a escoar grandes lotes de bezerros padronizados para recriadores. GC traz aumento de valorização e capilaridade de diferentes compradores mostrando o gado apenas uma única vez. Além de também ajudar trazendo reposição de vacas: matrizes prenhes e paridas.</li>
         </ul>
 
-        <h3>1.2.2 Recria — O Estirão do Animal</h3>
+        <h3>1.2.2 Recria: O Estirão do Animal</h3>
+        <p>É a fase intermediária e, geralmente, a mais longa. O objetivo é transformar o bezerro desmamado em um animal adulto (garrote/boi magro) com estrutura óssea e muscular.</p>
         <ul>
-          <li><strong>Ativo:</strong> Bezerros, novilhas e garrotes.</li>
-          <li><strong>Duração:</strong> 12 a 24 meses, dependendo da nutrição.</li>
-          <li><strong>A "Dor" do Recriador:</strong> É um "comprador profissional" — precisa comprar o bezerro barato e ganhar peso no pasto com baixo custo.</li>
+          <li><strong>O Ativo:</strong> Bezerros, novilhas e garrotes.</li>
+          <li><strong>Duração:</strong> Pode durar de 12 a 24 meses, dependendo da nutrição.</li>
+          <li><strong>A "Dor" do Recriador:</strong> Ele é um "comprador profissional". Ele precisa comprar o bezerro barato (reposição) e ganhar peso no pasto com baixo custo.</li>
           <li><strong>Oportunidade GC:</strong> Localizar bezerros de qualidade com frete viável. O recriador é o cliente que mais gira estoque.</li>
         </ul>
 
-        <h3>1.2.3 Engorda (Terminação) — O Toque Final</h3>
+        <h3>1.2.3 Engorda (Terminação): O Toque Final</h3>
+        <p>A fase onde o animal deposita gordura e atinge o peso de abate. Pode ser feita a pasto, TIP (Terminação Intensiva a Pasto) ou Confinamento.</p>
         <ul>
-          <li><strong>Ativo:</strong> Boi magro, novilhas gordas e Boi Gordo.</li>
-          <li><strong>Duração:</strong> 90 a 120 dias em confinamento.</li>
-          <li><strong>A "Dor" do Terminador:</strong> Margem apertada. Ele é um industrial que transforma grão (milho/DDG) em carne e precisa vender no "pico" da arroba.</li>
-          <li><strong>Oportunidade GC:</strong> Conectar o terminador com o recriador para comprar o boi magro certo para entrar no cocho.</li>
+          <li><strong>O Ativo:</strong> Boi magro, novilhas gordas e Boi Gordo.</li>
+          <li><strong>Duração:</strong> Curta (geralmente 90 a 120 dias em confinamento).</li>
+          <li><strong>A "Dor" do Terminador:</strong> Margem apertada. Ele é um industrial que transforma grão (milho/DDG) em carne. Ele precisa vender o boi gordo no "pico" da arroba.</li>
+          <li><strong>Oportunidade GC:</strong> Conectar o terminador com o recriador, para comprar o boi magro certo para entrar no cocho.</li>
         </ul>
 
-        <h3>1.2.4 O Conceito de Ciclo Completo</h3>
+        <h3>1.2.4 O Conceito de "Ciclo Completo"</h3>
         <ul>
-          <li>Execução das três fases (cria, recria e engorda) dentro da mesma estrutura zootécnica.</li>
+          <li>O ciclo completo caracteriza-se pela execução das três fases produtivas — cria, recria e engorda — dentro da mesma estrutura zootécnica.</li>
           <li><strong>Vantagem:</strong> Maior segurança biológica e menor dependência de compra externa.</li>
           <li><strong>Desafio:</strong> Gestão complexa e necessidade de grandes extensões de área.</li>
-          <li><strong>Oportunidade GC:</strong> Mesmo o fazendeiro de ciclo completo que intensifica a operação não tem bezerros e garrotes suficientes para a terminação — a GC é a parceira ideal para originar esses animais com padrão e agilidade.</li>
+          <li><strong>Oportunidade GC:</strong> O pecuarista no ciclo completo que intensifica a fazenda, ele não tem a quantidade de bezerros e garrotes necessários para a terminação, então mesmo ele tendo a criação de bezerros, mesmo assim ele precisa comprar diferentes categorias, de vacas, bezerros e ou garrotes. Transformando a Gado Certo na parceira ideal para originar esses animais com o padrão e a agilidade que a sua estrutura intensificada exige.</li>
         </ul>
 
         <div class="highlight-card">
-          <div class="label">💡 O Olhar do Especialista GC — Dica de Ouro</div>
-          <p>O mercado de pecuária é um <strong>sistema de vasos comunicantes</strong>. Se o preço do Boi Gordo sobe → o terminador corre para comprar Boi Magro → o recriador busca mais Bezerros → o que valoriza a conta do Criador. <br/><br/>Ao abordar um cliente, a primeira pergunta mental deve ser: <em>"Em que fase do ciclo ele está hoje e qual o próximo passo dele?"</em> Se está terminando, vai precisar de reposição em breve. Antecipe-se.</p>
+          <div class="label">💡 O Olhar do Especialista GC (Dica de Ouro)</div>
+          <p>O mercado de pecuária é um <strong>sistema de vasos comunicantes</strong>.</p>
+          <ul>
+            <li>Se o preço do <strong>Boi Gordo</strong> sobe no frigorífico, o terminador corre para comprar <strong>Boi Magro</strong>.</li>
+            <li>Isso faz o recriador buscar mais <strong>Bezerros</strong>.</li>
+            <li>O que valoriza a conta do <strong>Criador</strong>.</li>
+          </ul>
+          <p><strong>Tarefa para o Time:</strong> Ao abordar um cliente, a primeira pergunta "mental" deve ser: <em>Em que fase do ciclo ele está hoje e qual o próximo passo dele?</em> Se ele está terminando, ele vai precisar de reposição em breve. <strong>Antecipe-se.</strong></p>
         </div>
       </section>
 
       <!-- 1.3 GLOSSÁRIO -->
       <section class="section-block" id="s1-3">
-        <h2>1.3 Glossário da Pecuária</h2>
-        <p>O glossário é o "dicionário de guerra" do time. Para o vendedor ser respeitado pelo pecuarista, ele não pode hesitar ao ouvir esses termos. <strong>Domine os termos para converter técnica em autoridade e autoridade em venda.</strong></p>
+        <h2>1.3 – Glossário da Pecuária: O Idioma do Mercado</h2>
+        <p>O glossário é o "dicionário de guerra" do time. Para o vendedor ser respeitado pelo pecuarista, ele não pode hesitar ao ouvir esses termos.</p>
+        <p>Aqui está o glossário expandido e organizado por <strong>categorias estratégicas</strong>:</p>
+        <p><em>Domine os termos para converter técnica em autoridade e autoridade em venda.</em></p>
 
-        <h3>1.3.1 Indicadores de Performance</h3>
+        <h3>1.3.1 Indicadores de Performance (O que o cliente mede)</h3>
         <ul>
-          <li><strong>GMD (Ganho Médio Diário):</strong> Peso que o animal ganha por dia (ex: 800g/dia). Essencial para calcular quando o lote estará pronto.</li>
-          <li><strong>@ (Arroba):</strong> Unidade de medida que equivale a 15kg de carcaça. O preço do gado é sempre por arroba.</li>
-          <li><strong>Rendimento de Carcaça:</strong> Porcentagem do peso vivo que vira carne (geralmente 50% a 56%).</li>
+          <li><strong>GMD (Ganho Médio Diário):</strong> É o peso que o animal ganha por dia (ex: 800g/dia). Essencial para calcular quando o lote estará pronto.</li>
+          <li><strong>@ (Arroba):</strong> Unidade de medida que equivale a 15kg de carcaça. No Brasil, o preço do gado é sempre por arroba.</li>
+          <li><strong>Rendimento de Carcaça:</strong> A porcentagem do peso do animal vivo que vira carne (geralmente entre 50% e 56%).</li>
           <li><strong>Taxa de Lotação:</strong> Número de animais por hectare (UA/ha). Mede a eficiência do uso da terra.</li>
-          <li><strong>UA (Unidade Animal):</strong> Unidade de referência equivalente a um animal de 450kg.</li>
+          <li><strong>UA (Unidade Animal):</strong> Unidade de referência que equivale a um animal de 450kg.</li>
         </ul>
 
-        <h3>1.3.2 Tecnologias e Manejo</h3>
+        <h3>1.3.2 Tecnologias e Manejo (O "Como" se produz)</h3>
         <ul>
           <li><strong>IATF (Inseminação Artificial em Tempo Fixo):</strong> Protocolo que sincroniza o cio das vacas para inseminar todas em um único dia. Melhora a genética e padroniza o lote.</li>
           <li><strong>TIP (Terminação Intensiva a Pasto):</strong> Engorda acelerada fornecendo grande quantidade de ração diretamente no pasto, sem necessidade de curral de confinamento.</li>
-          <li><strong>Confinamento:</strong> Sistema onde o gado fica em piquetes fechados recebendo dieta 100% no cocho para engorda rápida.</li>
-          <li><strong>Creep Feeding:</strong> Cocho com acesso restrito apenas aos bezerros para que comam ração enquanto ainda mamam, antecipando a desmama.</li>
+          <li><strong>Confinamento:</strong> Sistema onde o gado fica em piquetes fechados recebendo dieta 100% no cocho para engorda rápida (fase final).</li>
+          <li><strong>Semiconfinamento:</strong> Sistema que combina pastagem com suplementação no cocho, equilibrando custo e velocidade de terminação.</li>
+          <li><strong>Creep Feeding:</strong> Cocho com acesso restrito apenas aos bezerros (as vacas não entram), para que eles comam ração enquanto ainda mamam. Antecipa a desmama.</li>
         </ul>
 
-        <h3>1.3.3 Nutrição e Insumos</h3>
+        <h3>1.3.3 Nutrição e Insumos (O "Combustível" do boi)</h3>
         <ul>
           <li><strong>DDG (Distillers Dried Grains):</strong> Resíduo seco de destilaria de milho. Proteína barata e eficiente, muito comum no Mato Grosso.</li>
-          <li><strong>WDG (Wet Distillers Grains):</strong> Versão úmida do DDG. Mais barata, mas difícil de transportar e armazenar.</li>
+          <li><strong>WDG (Wet Distillers Grains):</strong> É a versão úmida do DDG. Mais barata, mas difícil de transportar e armazenar por muito tempo.</li>
           <li><strong>Suplementação:</strong> Sal mineral, proteinado ou ração entregue no pasto para suprir o que a grama não entrega.</li>
         </ul>
 
-        <h3>1.3.4 Mercado e Comercialização</h3>
+        <h3>1.3.4 Mercado e Comercialização (Onde o dinheiro troca de mãos)</h3>
         <ul>
-          <li><strong>Boi China:</strong> Macho jovem (até 30 meses/4 dentes) que atende às exigências de exportação para a China. Geralmente paga um prêmio (valor extra por arroba).</li>
-          <li><strong>Ágio:</strong> A diferença de preço (em %) que você paga a mais na arroba do bezerro em relação à arroba do boi gordo. Ex: Boi vale R$200 e bezerro sai a R$250/@ = ágio de 25%.</li>
+          <li><strong>Boi China:</strong> Macho jovem (até 30 meses/4 dentes) que atende às exigências de exportação para a China. Geralmente paga um <strong>Prêmio</strong> (valor extra por arroba).</li>
+          <li><strong>Ágio:</strong> A diferença de preço (em %) que você paga a mais na arroba do bezerro em relação à arroba do boi gordo. Ex: Se o boi vale R$ 200 e o bezerro sai a R$ 250 a @, o ágio é de 25%.</li>
           <li><strong>Reposição:</strong> A compra de novos animais (bezerros ou bois magros) para repor o que foi vendido para o frigorífico.</li>
           <li><strong>Boi Magro:</strong> Animal que já cresceu (recria), mas ainda não tem gordura. É o "insumo" principal de quem faz engorda.</li>
-          <li><strong>Vaca de Descarte:</strong> Matriz que saiu do ciclo reprodutivo e será vendida para abate. É uma fonte de caixa importante para o criador.</li>
+          <li><strong>Vaca de Descarte:</strong> Matriz que saiu do ciclo de reprodução e será vendida para abate. É uma fonte de caixa importante para o criador.</li>
         </ul>
 
         <h3>1.3.5 Gestão Financeira e Documentação</h3>
         <ul>
-          <li><strong>GTA (Guia de Trânsito Animal):</strong> Documento obrigatório para qualquer transporte de gado. É o "passaporte" do boi — sem ele, não há venda legal.</li>
-          <li><strong>Nota Fiscal do Produtor (NFP):</strong> Documento fiscal que oficializa a transação. Essencial para o fechamento no setor de OPEC da Gado Certo.</li>
-          <li><strong>IE (Inscrição Estadual):</strong> Registro do produtor rural perante a SEFAZ. Sem IE ativa, o pecuarista não pode emitir Notas Fiscais.</li>
-          <li><strong>CAR (Cadastro Ambiental Rural):</strong> Registro eletrônico obrigatório para todos os imóveis rurais. Frigoríficos exportadores não compram de fazendas com restrições no CAR ou desmatamento ilegal.</li>
-          <li><strong>CAR Aprovado no Cawbot:</strong> A fazenda não possui desmatamento ilegal, não sobrepõe terras indígenas ou unidades de conservação. Gado "Cawbot Ok" tem liquidez imediata nos grandes frigoríficos (JBS, Marfrig, Minerva).</li>
-          <li><strong>FIF:</strong> Produto financeiro para captar recursos para o agronegócio.</li>
-          <li><strong>Barter:</strong> Operação de troca — o produtor paga insumos com a produção futura.</li>
-          <li><strong>DIFAL:</strong> Imposto cobrado em operações interestaduais (ex: gado saindo do MT para ser abatido em SP). Atenção a quem pagará esse custo na negociação.</li>
+          <li><strong>FIF (Fundo de Investimento nas Cadeias Produtivas Agroindustriais):</strong> Produto financeiro para captar recursos para o agronegócio.</li>
+          <li><strong>GTA (Guia de Trânsito Animal):</strong> Documento oficial que atesta as condições sanitárias do lote e permite o transporte. É o "passaporte" do boi. Sem isso, não há venda legal.</li>
+          <li><strong>Barter:</strong> Operação de troca. O produtor paga insumos (como ração ou gado) com a produção futura.</li>
+          <li><strong>IE (Inscrição Estadual):</strong> É o registro do produtor rural perante a Secretaria da Fazenda (SEFAZ). Sem a IE ativa, o pecuarista não pode emitir Notas Fiscais, o que impede a venda legal do gado.<br/><em><strong>Ponto de Venda GC:</strong> O vendedor deve conferir se a IE do comprador e do vendedor estão regulares para evitar que o caminhão seja retido em barreiras fiscais.</em></li>
+          <li><strong>CAR (Cadastro Ambiental Rural):</strong> Registro eletrônico obrigatório para todos os imóveis rurais. Ele integra as informações ambientais das propriedades (Áreas de Preservação Permanente - APP, Reserva Legal, etc.).<br/><em><strong>Ponto de Venda GC:</strong> O mercado moderno (e principalmente os frigoríficos exportadores) não compra de fazendas que tenham restrições no CAR ou desmatamento ilegal. Ter o CAR em dia é sinônimo de "Gado Sustentável" e acesso aos melhores preços.</em></li>
+          <li><strong>CAR Aprovado no Cawbot:</strong> O Cawbot é uma plataforma de inteligência que cruza dados do CAR com imagens de satélite e listas de áreas embargadas (IBAMA, SEMAS, etc.).<br/>
+            <strong>O que significa:</strong> A fazenda não possui desmatamento ilegal, não sobrepõe terras indígenas ou unidades de conservação e não utiliza trabalho análogo à escravidão.<br/>
+            <strong>Vantagem Competitiva:</strong> Gado de fazenda "Cawbot Ok" tem liquidez imediata nos grandes frigoríficos exportadores (JBS, Marfrig, Minerva). É um selo invisível de qualidade socioambiental.</li>
+          <li><strong>Nota Fiscal do Produtor (NFP):</strong> O documento fiscal que oficializa a transação financeira. Essencial para o fechamento da operação no setor de OPEC da Gado Certo.</li>
+          <li><strong>DIFAL (Diferencial de Alíquota):</strong> Imposto cobrado em operações interestaduais (ex: gado saindo do MT para ser abatido em SP). O vendedor de elite precisa estar atento a quem pagará esse custo na negociação.</li>
         </ul>
 
         <h3>1.3.6 Categorias de Origem e Valor Genético</h3>
         <ul>
-          <li><strong>Gado Comercial:</strong> Animal comprado no mercado sem histórico genético profundo. Foco apenas no peso e no padrão racial visual.</li>
-          <li><strong>Gado Crioulo:</strong> Nascido e criado dentro da própria fazenda. Valorizado por já estar "erado" (adaptado) ao bioma.</li>
-          <li><strong>Gado PO (Puro de Origem):</strong> Animal com registro genealógico na associação da raça (ex: ABCZ). Gado de elite para produção de touros e matrizes.</li>
-          <li><strong>F1 Angus/Nelore:</strong> O "ouro" do cruzamento. Alta demanda, fácil de vender, máxima heterose.</li>
-          <li><strong>Tricross:</strong> Terceira raça sobre a fêmea F1 (ex: F1 Angus x Nelore cruzada com touro Senepol ou Hereford). Nível avançado de estratégia genética.</li>
-          <li><strong>Cruzado "Sem Ponta":</strong> Gado cruzado sem critério definido (mistura de várias raças). Perde valor pela falta de padronização de carcaça.</li>
-          <li><strong>Gado CEIP:</strong> Animais com Certificado Especial de Identificação e Produção — avaliação genética comprovada.</li>
+          <li><strong>Gado Comercial:</strong> Animal comprado no mercado ou leilões de terceiros, sem um histórico genético profundo. O foco é apenas o peso e o padrão racial visual.</li>
+          <li><strong>Gado Crioulo:</strong> Animal nascido e criado dentro da própria fazenda. O comprador valoriza esse gado porque ele já está <strong>"erado"</strong> (adaptado) ao bioma e o vendedor conhece a procedência genética e sanitária.</li>
+          <li><strong>Gado PO (Puro de Origem):</strong> Animal com registro genealógico na associação da raça (ex: ABCZ). É o gado de elite, usado para produzir touros e matrizes, não apenas carne.</li>
+          <li><strong>Gado Cruzado:</strong> Resultado do cruzamento entre raças diferentes para aproveitar a <strong>Heterose (Vigor Híbrido)</strong>. O exemplo mais forte no Brasil é o <strong>F1 (Filho 1)</strong> de Aberdeen Angus com Nelore.
+            <ul>
+              <li><em><strong>F1 Angus/Nelore:</strong> O "ouro" do cruzamento. Alta demanda, fácil de vender, máxima heterose.</em></li>
+              <li><em><strong>Tricross:</strong> Quando se usa uma terceira raça sobre a fêmea F1 (ex: F1 Angus x Nelore cruzada com um touro Senepol ou Hereford). É o nível avançado de estratégia genética.</em></li>
+              <li><em><strong>Cruzado "Sem Ponta":</strong> Gado cruzado sem critério definido (mistura de várias raças sem foco). Cuidado: Esse gado perde valor porque perde a padronização de carcaça.</em></li>
+            </ul>
+          </li>
+          <li><strong>Gado CEIP:</strong> Animais que possuem o Certificado Especial de Identificação e Produção. São animais comerciais, mas com avaliação genética comprovada.</li>
         </ul>
 
-        <h3>1.3.7 Estado Reprodutivo</h3>
+        <h3>1.3.7 Estado Reprodutivo (Vital para compra e venda de matrizes)</h3>
         <ul>
           <li><strong>Vaca Parida:</strong> Fêmea que já deu à luz e está com o bezerro ao pé. Geralmente vendida como "2 em 1".</li>
           <li><strong>Vaca Prenha:</strong> Fêmea com confirmação de gestação (via toque ou ultrassom). Valorizada pelo "bezerro na barriga".</li>
-          <li><strong>Vaca Vazia:</strong> Fêmea que não está prenha. Pode ser oportunidade para engorda/descarte ou nova tentativa de IATF.</li>
+          <li><strong>Vaca Vazia:</strong> Fêmea que não está prenha. Pode ser uma oportunidade para engorda e descarte ou para nova tentativa de IATF.</li>
           <li><strong>Novilha Pronta / Apta:</strong> Fêmea jovem que atingiu peso e idade para entrar em reprodução.</li>
         </ul>
 
-        <h3>1.3.8 Gírias do Mato Grosso — O Papo de Curral</h3>
+        <h3>1.3.8 Gírias e Termos Comuns no Mato Grosso (O "Papo de Curral")</h3>
         <ul>
-          <li><strong>Boi de Cabeceira:</strong> Os melhores animais de um lote — os maiores, mais bonitos e mais pesados.</li>
-          <li><strong>Fundo de Boiada:</strong> O refugo. Animais que sobraram do lote por serem menores ou com defeitos.</li>
-          <li><strong>Gado de "Brinco":</strong> Gado rastreado (SISBOV). Essencial para acessar a cota de exportação para a Europa.</li>
-          <li><strong>Boi de Cocho:</strong> Animal já adaptado a comer ração no cocho (confinamento).</li>
-          <li><strong>Eradice:</strong> Refere-se à idade do animal. Um "boi erado" é adulto, pronto para o abate ou trabalho pesado.</li>
+          <li><strong>Boi de Cabeceira:</strong> Os melhores animais de um lote. Os maiores, mais bonitos e mais pesados.</li>
+          <li><strong>Fundo de Boiada:</strong> O refugo. Animais que sobraram do lote por serem menores, mais lentos para ganhar peso ou com defeitos de aprumo.</li>
+          <li><strong>Gado de "Brinco":</strong> Gado rastreado (SISBOV). Essencial para o vendedor que quer acessar a cota de exportação para a Europa.</li>
+          <li><strong>Boi de Cocho:</strong> Animal que já está adaptado a comer ração no cocho (confinamento).</li>
+          <li><strong>Eradice:</strong> Refere-se à idade do animal. Um "boi erado" é um boi adulto, pronto para o abate ou trabalho pesado.</li>
           <li><strong>Arrematar:</strong> O ato de fechar o negócio no leilão ou na negociação direta.</li>
           <li><strong>Apartação:</strong> O ato de separar o gado por categoria, peso ou sexo dentro do curral.</li>
-          <li><strong>Boi de Rolo:</strong> Gado de procedência duvidosa ou negociações informais de troca. Perigo para o vendedor GC — foco em "Gestão de Fricção".</li>
+          <li><strong>Boi de Rolo:</strong> Termo usado para gado de procedência duvidosa ou negociações informais de troca (perigoso para o vendedor GC, foco em "Gestão de Fricção").</li>
         </ul>
       </section>
 
       <!-- 1.4 PERSONAS -->
       <section class="section-block" id="s1-4">
-        <h2>1.4 Personas dos Pecuaristas</h2>
-        <p>Na pecuária de alta performance, o gado é o ativo, mas <strong>a negociação é feita com pessoas</strong>. Cada perfil possui dores, objetivos e níveis de afinidade tecnológica distintos. O vendedor GC que usa a mesma linguagem para um "Pecuarista Raiz" e um "Comprador de Grande Grupo" está deixando dinheiro na mesa.</p>
+        <h2>1.4 – Personas dos Pecuaristas: O Mapa da Abordagem Estratégica</h2>
+
+        <h3>Introdução: Por que mapear o cliente?</h3>
+        <p>Para que a sua equipe de elite compreenda não apenas <strong>o que</strong> vender, mas <strong>para quem</strong> vender, a seção de Personas deve servir como um guia de psicologia aplicada ao campo.</p>
+        <p>Na pecuária de alta performance, o gado é o ativo, mas a negociação é feita com pessoas. Cada perfil de pecuarista possui dores, objetivos e níveis de afinidade tecnológica distintos. O vendedor da Gado Certo que utiliza a mesma linguagem para um "Pecuarista Raiz" e para um "Comprador de Grande Grupo" está deixando dinheiro na mesa.</p>
+        <p>Dominar estas personas permite que você:</p>
+        <ul>
+          <li><strong>Ajuste o tom de voz:</strong> Do "papo de curral" à apresentação de indicadores financeiros.</li>
+          <li><strong>Antecipe Objeções:</strong> Cada persona tem um medo específico (golpes, perda de lucro ou falta de padrão).</li>
+          <li><strong>Acelere o Fechamento:</strong> Ao falar o que o cliente valoriza, você constrói o atalho para a confiança.</li>
+        </ul>
 
         <h3>1.4.1 Pecuarista Profissional</h3>
         <ul>
-          <li><strong>Rotina:</strong> Reside próximo à propriedade — acredita que "é o olho do dono que engorda o gado". Valoriza muito a família e o reconhecimento social pelo trabalho bem-feito.</li>
-          <li><strong>Decisório:</strong> Totalmente analítico e organizado. Pecuária é sua renda principal.</li>
-          <li><strong>O que odeia:</strong> Delegar a venda sem controle e pagar comissões elevadas em leilões.</li>
+          <li><strong>Rotina e Social:</strong> Reside próximo à propriedade, pois acredita que "é o olho do dono que engorda o gado". Valoriza muito a família e o reconhecimento social pelo trabalho bem-feito.</li>
+          <li><strong>Processo Decisório:</strong> Totalmente analítico e organizado. Pecuária é sua renda principal.</li>
+          <li><strong>O que ele odeia:</strong> Delegar a venda sem controle e pagar comissões elevadas em leilões.</li>
           <li><strong>Dica de Ouro:</strong> Exalte a qualidade dos animais dele e use referências de outros clientes para gerar conveniência.</li>
         </ul>
 
         <h3>1.4.2 Pecuarista Empresário</h3>
         <ul>
-          <li><strong>Rotina:</strong> Menos experiente na lida direta, visita a fazenda mensalmente e confia no gerente.</li>
-          <li><strong>Decisório:</strong> Estratégico — foca na pecuária como investimento e diversificação (considera Integração Lavoura-Pecuária).</li>
-          <li><strong>O que odeia:</strong> Sentir que está perdendo dinheiro por decisões erradas por causa da sua ausência.</li>
+          <li><strong>Rotina e Social:</strong> Menos experiente na lida direta, visita a fazenda mensalmente e confia no gerente.</li>
+          <li><strong>Processo Decisório:</strong> Estratégico, foca na pecuária como investimento e diversificação (considera Integração Lavoura-Pecuária).</li>
+          <li><strong>O que ele odeia:</strong> Sentir que está perdendo dinheiro por decisões erradas na fazenda devido à sua ausência.</li>
           <li><strong>Dica de Ouro:</strong> Ele busca segurança e parceria. Apresente relatórios e indicadores claros de desempenho.</li>
         </ul>
 
         <h3>1.4.3 Pecuarista Raiz</h3>
         <ul>
-          <li><strong>Rotina:</strong> Vive o dia a dia do curral, participa de cavalgadas, dedica-se exclusivamente. Identifica-se com pessoas diretas e simples.</li>
-          <li><strong>Decisório:</strong> Sistemático e emocional — baseia-se em experiência prática, não em formação acadêmica.</li>
-          <li><strong>O que odeia:</strong> Tecnologia complexa e o medo constante de ser vítima de golpes.</li>
-          <li><strong>Dica de Ouro:</strong> Reforce que a comissão GC é metade da de um leilão, que o pagamento é à vista no carregamento e que acompanhamos o embarque.</li>
+          <li><strong>Rotina e Social:</strong> Vive o dia a dia do curral, participa de cavalgadas e tem dedicação exclusiva. Identifica-se com pessoas diretas e simples.</li>
+          <li><strong>Processo Decisório:</strong> Sistemático e emocional; baseia-se em experiência prática, não em formação acadêmica.</li>
+          <li><strong>O que ele odeia:</strong> Tecnologia complexa e o medo constante de ser vítima de golpes.</li>
+          <li><strong>Dica de Ouro:</strong> Reforce que a comissão da Gado Certo é metade da de um leilão, que o pagamento é à vista no carregamento e que acompanhamos o embarque.</li>
         </ul>
 
         <h3>1.4.4 Gerente de Fazenda</h3>
         <ul>
-          <li><strong>Rotina:</strong> Mora na fazenda e lida com pressão direta do patrão e da equipe.</li>
-          <li><strong>Decisório:</strong> É o braço direito — embora não decida o pagamento, influencia diretamente a escolha dos animais.</li>
-          <li><strong>O que odeia:</strong> Ser ignorado na negociação ou sentir que sua autoridade está sendo desafiada.</li>
+          <li><strong>Rotina e Social:</strong> Mora na fazenda e lida com a pressão direta do patrão e da equipe.</li>
+          <li><strong>Processo Decisório:</strong> É o braço direito; embora não decida o pagamento, influencia diretamente a escolha dos animais.</li>
+          <li><strong>O que ele odeia:</strong> Ser ignorado na negociação ou sentir que sua autoridade está sendo desafiada.</li>
           <li><strong>Dica de Ouro:</strong> Trate-o como parceiro e mantenha-o informado simultaneamente ao proprietário.</li>
         </ul>
 
         <h3>1.4.5 Pecuarista Lavoura &amp; Pecuária</h3>
         <ul>
-          <li><strong>Rotina:</strong> Focado e tecnificado, delega a operação pecuária ao gerente.</li>
-          <li><strong>Decisório:</strong> Decisões baseadas em eficiência para recuperar áreas degradadas.</li>
-          <li><strong>O que odeia:</strong> Dificuldade de comprar gado por falta de conhecimento técnico profundo na área pecuária.</li>
+          <li><strong>Rotina e Social:</strong> Focado e tecnificado, delega a operação pecuária ao gerente.</li>
+          <li><strong>Processo Decisório:</strong> Decisões baseadas em eficiência para recuperar áreas degradadas.</li>
+          <li><strong>O que ele odeia:</strong> A dificuldade de comprar gado devido à falta de conhecimento técnico profundo na área pecuária.</li>
           <li><strong>Dica de Ouro:</strong> Ofereça a "solução pronta" com inspeção de qualidade garantida para facilitar a compra.</li>
         </ul>
 
         <h3>1.4.6 Comprador de Grande Grupo</h3>
         <ul>
-          <li><strong>Rotina:</strong> Executivo de mercado com vasta rede de contatos e network.</li>
-          <li><strong>Decisório:</strong> Focado em metas, volume e planejamento comercial.</li>
-          <li><strong>O que odeia:</strong> Lotes pequenos, despadronizados ou que não respeitem normas de compliance.</li>
+          <li><strong>Rotina e Social:</strong> Executivo de mercado com vasta rede de contatos e network.</li>
+          <li><strong>Processo Decisório:</strong> Focado em metas, volume e planejamento comercial.</li>
+          <li><strong>O que ele odeia:</strong> Lotes pequenos, despadronizados ou que não respeitem normas de compliance.</li>
           <li><strong>Dica de Ouro:</strong> Apresente lotes volumosos e foque nas garantias de segurança sanitária e jurídica.</li>
         </ul>
       </section>
 
       <!-- 1.5 GEOGRAFIA -->
       <section class="section-block" id="s1-5">
-        <h2>1.5 Geografia da Oportunidade</h2>
-        <p>O Mato Grosso e Rondônia não são blocos únicos. Cada região possui uma vocação produtiva definida pelo clima, logística e solo. Entender o mapa é saber onde buscar cada tipo de lote e como direcionar a oferta para o comprador certo.</p>
+        <h2>1.5 – Geografia da Oportunidade</h2>
 
-        <h3>Mato Grosso — Polos Estratégicos</h3>
+        <h3>Polos de Pecuária (MT)</h3>
+        <p>Este tópico é fundamental para o time da Gado Certo entender que o Mato Grosso não é um bloco único. Cada região possui uma vocação produtiva definida pelo clima, logística e solo, o que dita qual Persona atua ali e qual o Gado de preferência. Entender o mapa é saber onde buscar cada tipo de lote e como direcionar a oferta para o comprador certo.</p>
 
-        <h4>Região Norte / Noroeste — O Berço da Cria</h4>
+        <div class="visual-block">
+          <svg viewBox="0 0 680 540" role="img" aria-label="Mapa dos polos pecuários do Mato Grosso">
+            <text class="th" x="340" y="32" text-anchor="middle">Mato Grosso — polos pecuários</text>
+            <g transform="translate(0, 50)">
+              <path d="M271.7,425.5L269.3,419.9L268.4,421.3L263.2,416.7L258.8,419.3L256.3,416.8L254.1,416.8L252.7,414.2L248.3,412.6L243.1,406.2L243.5,403.5L241.9,403.5L241.5,402.2L242.0,398.7L240.0,396.5L240.2,387.4L241.5,383.1L245.5,379.1L244.7,376.6L246.6,374.3L246.0,370.2L243.4,370.1L241.7,372.4L173.4,370.2L170.7,339.1L157.9,324.8L170.5,324.3L169.4,305.6L167.5,305.2L166.8,301.4L164.1,297.5L164.6,295.6L162.3,293.6L162.4,290.7L160.8,288.6L161.2,285.1L165.1,280.8L162.4,278.8L162.4,276.7L161.4,276.8L162.2,275.5L160.7,275.6L161.7,273.2L158.5,272.7L155.6,270.2L154.3,271.0L151.9,268.9L155.3,264.4L164.9,259.8L165.8,253.8L169.5,247.7L169.0,245.1L172.7,240.8L175.5,240.4L177.0,237.3L177.4,226.9L182.6,221.8L185.8,221.5L189.0,216.1L184.3,212.3L184.0,207.3L180.9,203.8L180.7,199.2L177.7,198.6L175.8,196.4L175.6,186.6L183.0,179.7L183.3,176.7L180.8,172.6L180.7,168.0L172.3,167.9L169.5,167.3L168.3,165.7L166.4,166.3L166.4,167.7L162.6,165.1L162.0,163.0L119.2,162.9L120.4,161.4L120.7,155.3L122.2,155.5L122.3,152.2L121.2,151.6L122.7,140.6L118.2,133.9L118.9,131.1L117.2,130.3L120.8,119.1L119.3,115.8L119.9,113.9L118.2,113.0L121.0,112.0L122.1,109.5L121.1,109.0L120.6,105.6L119.2,105.1L120.2,104.6L118.2,103.5L119.1,100.1L116.2,99.1L116.8,95.8L115.9,95.5L120.2,94.4L119.0,88.5L122.4,81.6L120.2,77.7L117.9,76.9L242.3,76.7L245.8,73.9L241.5,73.2L243.4,68.9L242.3,64.9L246.3,58.3L246.0,52.2L247.4,50.6L243.5,39.4L247.1,36.6L247.8,33.8L250.7,30.7L250.3,24.3L253.2,20.0L256.3,21.9L259.7,27.3L261.0,31.9L262.6,32.7L265.4,44.5L269.3,49.3L269.8,51.8L272.7,53.9L271.0,61.9L273.0,66.0L272.5,68.2L273.5,68.8L274.6,75.3L281.1,76.3L281.4,79.1L282.8,80.1L289.9,81.7L296.4,88.7L295.6,92.0L298.1,94.0L305.0,94.5L307.3,100.8L310.8,99.3L564.1,117.9L561.0,125.5L557.5,129.4L556.5,138.1L554.3,140.0L551.8,147.9L549.2,150.1L550.5,153.7L548.5,157.1L549.3,158.9L548.0,160.9L549.0,166.1L547.0,168.5L547.1,172.8L543.9,180.5L543.8,184.5L544.8,186.1L547.1,186.7L546.8,190.0L544.5,192.5L545.9,197.1L547.8,198.2L546.1,202.3L545.9,210.6L547.6,211.4L548.6,219.5L545.9,225.0L546.7,226.1L545.2,226.8L545.4,228.1L547.5,228.3L548.4,234.9L549.9,234.1L549.4,235.2L552.5,235.5L553.2,237.4L552.2,241.0L549.6,242.1L550.5,243.5L548.9,244.5L549.9,250.4L549.0,254.2L546.7,256.7L546.8,259.3L542.9,262.8L541.3,269.1L538.6,270.8L540.1,284.8L538.8,286.2L536.9,285.8L537.0,288.0L534.6,292.7L533.6,297.7L535.1,301.9L531.5,310.6L531.9,312.5L530.1,314.3L530.3,317.2L524.1,321.9L522.2,321.9L521.8,320.0L520.3,319.5L512.6,323.3L508.0,327.6L506.2,339.6L504.7,340.6L505.0,342.2L503.1,341.7L503.8,345.5L499.1,352.9L496.3,352.4L493.9,355.3L484.4,355.6L481.4,362.6L473.7,365.3L472.0,368.8L472.8,370.1L471.7,369.6L467.5,371.8L467.3,375.4L470.6,378.1L469.4,381.5L465.3,383.0L466.2,384.9L465.0,384.6L463.5,388.9L457.7,391.3L457.0,393.6L454.6,393.5L452.9,397.7L452.9,401.9L450.4,403.5L446.4,410.9L447.3,414.0L445.9,416.4L445.4,426.2L448.4,429.2L452.2,439.7L448.1,440.0L445.7,438.7L437.8,437.7L436.0,440.0L431.9,438.9L430.9,437.4L427.9,438.9L424.6,438.4L421.3,435.3L417.8,435.4L417.5,433.3L421.4,426.7L427.4,425.1L428.3,409.0L427.4,408.0L422.8,410.7L422.4,413.0L417.6,417.1L414.3,418.2L412.7,423.2L408.7,422.8L403.9,425.1L400.7,424.1L400.8,421.6L397.4,419.9L396.9,418.2L392.9,417.5L386.3,419.6L386.0,421.3L382.0,423.6L378.7,423.0L371.1,424.6L367.8,423.3L365.0,420.4L362.7,420.6L361.7,419.3L355.9,418.0L353.5,415.7L353.5,413.8L351.2,412.4L348.9,413.0L341.7,409.5L339.6,410.0L336.8,408.5L337.0,407.1L335.4,405.8L332.7,405.6L319.8,412.1L317.5,410.3L316.6,411.7L311.8,411.5L311.9,412.4L308.4,411.3L306.3,414.3L304.7,414.4L304.8,417.1L302.8,420.0L298.6,421.9L299.6,423.0L296.2,427.8L293.4,429.8L283.1,431.5L280.2,434.5L279.2,432.8L274.1,430.6L272.8,427.3L271.0,427.2L271.7,425.5Z"
+                fill="#F5F0E5" stroke="#584e41" stroke-width="1.2" stroke-linejoin="round"/>
+              <g opacity="0.45">
+                <circle cx="333.8" cy="119.3" r="38" fill="#1D9E75"/>
+                <circle cx="276.4" cy="173.5" r="32" fill="#1D9E75"/>
+                <circle cx="229.4" cy="178.2" r="30" fill="#1D9E75"/>
+                <circle cx="210.4" cy="123.2" r="28" fill="#1D9E75"/>
+                <circle cx="356.7" cy="197.4" r="28" fill="#BA7517"/>
+                <circle cx="348.5" cy="224.1" r="28" fill="#BA7517"/>
+                <circle cx="340.7" cy="244.0" r="28" fill="#BA7517"/>
+                <circle cx="228.9" cy="241.5" r="30" fill="#185FA5"/>
+                <circle cx="262.9" cy="268.5" r="30" fill="#185FA5"/>
+                <circle cx="277.9" cy="305.7" r="30" fill="#185FA5"/>
+                <circle cx="487.9" cy="283.2" r="34" fill="#534AB7"/>
+                <circle cx="487.2" cy="226.6" r="34" fill="#534AB7"/>
+                <circle cx="528.0" cy="124.7" r="34" fill="#534AB7"/>
+                <circle cx="333.4" cy="344.0" r="32" fill="#993C1D"/>
+                <circle cx="390.8" cy="378.3" r="32" fill="#993C1D"/>
+                <circle cx="404.1" cy="342.5" r="30" fill="#993C1D"/>
+                <circle cx="271.3" cy="362.8" r="28" fill="#3B6D11"/>
+                <circle cx="312.7" cy="369.9" r="25" fill="#3B6D11"/>
+              </g>
+              <g fill="#0b0c0e">
+                <circle cx="333.8" cy="119.3" r="3"/><circle cx="276.4" cy="173.5" r="3"/>
+                <circle cx="229.4" cy="178.2" r="3"/><circle cx="210.4" cy="123.2" r="3"/>
+                <circle cx="356.7" cy="197.4" r="3"/><circle cx="348.5" cy="224.1" r="3"/>
+                <circle cx="340.7" cy="244.0" r="3"/><circle cx="228.9" cy="241.5" r="3"/>
+                <circle cx="262.9" cy="268.5" r="3"/><circle cx="277.9" cy="305.7" r="3"/>
+                <circle cx="487.9" cy="283.2" r="3"/><circle cx="487.2" cy="226.6" r="3"/>
+                <circle cx="528.0" cy="124.7" r="3"/><circle cx="333.4" cy="344.0" r="3"/>
+                <circle cx="390.8" cy="378.3" r="3"/><circle cx="404.1" cy="342.5" r="3"/>
+                <circle cx="271.3" cy="362.8" r="3"/><circle cx="312.7" cy="369.9" r="3"/>
+              </g>
+              <g font-size="11" fill="#0b0c0e">
+                <text x="339" y="116" text-anchor="start">Alta Floresta</text>
+                <text x="282" y="170" text-anchor="start">Juara</text>
+                <text x="223" y="170" text-anchor="end">Juína</text>
+                <text x="216" y="119" text-anchor="start">Colniza</text>
+                <text x="362" y="194" text-anchor="start">Sinop</text>
+                <text x="354" y="222" text-anchor="start">Sorriso</text>
+                <text x="346" y="241" text-anchor="start">Lucas do Rio Verde</text>
+                <text x="223" y="237" text-anchor="end">Sapezal</text>
+                <text x="268" y="265" text-anchor="start">Campo Novo do Parecis</text>
+                <text x="283" y="302" text-anchor="start">Tangará da Serra</text>
+                <text x="493" y="282" text-anchor="start">Água Boa</text>
+                <text x="493" y="225" text-anchor="start">Querência</text>
+                <text x="522" y="123" text-anchor="end">Vila Rica</text>
+                <text x="327" y="342" text-anchor="end">Cuiabá</text>
+                <text x="396" y="376" text-anchor="start">Rondonópolis</text>
+                <text x="410" y="340" text-anchor="start">Primavera do Leste</text>
+                <text x="265" y="361" text-anchor="end">Cáceres</text>
+                <text x="318" y="380" text-anchor="start">Poconé</text>
+              </g>
+            </g>
+            <g transform="translate(40, 490)">
+              <rect x="0" y="0" width="600" height="36" rx="8" fill="#f0ebe0" stroke="#d9d4c5" stroke-width="0.5"/>
+              <circle cx="20" cy="18" r="6" fill="#1D9E75" opacity="0.55"/><text class="ts" x="32" y="22">Cria</text>
+              <circle cx="80" cy="18" r="6" fill="#BA7517" opacity="0.55"/><text class="ts" x="92" y="22">Médio-Norte</text>
+              <circle cx="190" cy="18" r="6" fill="#185FA5" opacity="0.55"/><text class="ts" x="202" y="22">BR-364</text>
+              <circle cx="270" cy="18" r="6" fill="#534AB7" opacity="0.55"/><text class="ts" x="282" y="22">Araguaia</text>
+              <circle cx="360" cy="18" r="6" fill="#993C1D" opacity="0.55"/><text class="ts" x="372" y="22">Sudeste/Confinamento</text>
+              <circle cx="525" cy="18" r="6" fill="#3B6D11" opacity="0.55"/><text class="ts" x="537" y="22">Pantanal</text>
+            </g>
+          </svg>
+          <p class="visual-caption">Polos pecuários do Mato Grosso e suas vocações produtivas</p>
+        </div>
+
+        <h4>1.5.1 Região Norte / Noroeste (O Berço da Cria)</h4>
         <ul>
           <li><strong>Cidades Polo:</strong> Juara, Juína, Alta Floresta, Colniza.</li>
-          <li><strong>Ciclo Dominante:</strong> Cria — é a grande fábrica de bezerros do estado.</li>
-          <li><strong>Perfil de Gado:</strong> Predomínio de Nelore por resistência e adaptabilidade.</li>
+          <li><strong>Ciclo Dominante:</strong> <strong>Cria</strong>. É a grande fábrica de bezerros do estado.</li>
+          <li><strong>Perfil de Gado:</strong> Predomínio de <strong>Nelore (Zebuínos)</strong> devido à alta resistência e adaptabilidade à floresta e calor.</li>
           <li><strong>Persona Comum:</strong> Pecuarista Raiz e Gerente de Fazenda.</li>
           <li><strong>Oportunidade GC:</strong> Angariar lotes volumosos de bezerros para venda aos invernistas do Sul/Sudeste do estado.</li>
         </ul>
 
-        <h4>Região Médio-Norte — O Coração da Integração</h4>
+        <h4>1.5.2 Região Médio-Norte (O Coração da Integração)</h4>
         <ul>
           <li><strong>Cidades Polo:</strong> Sorriso, Sinop, Lucas do Rio Verde.</li>
-          <li><strong>Ciclo Dominante:</strong> Recria e Engorda.</li>
-          <li><strong>Perfil de Gado:</strong> Gado Cruzado (F1 Angus) e Braford/Brangus. O gado entra para aproveitar o milho e DDG das usinas de etanol.</li>
+          <li><strong>Ciclo Dominante:</strong> Recria e Engorda (Terminação).</li>
+          <li><strong>Perfil de Gado:</strong> <strong>Gado Cruzado (F1 Angus)</strong> e <strong>Braford/Brangus</strong>. Aqui o gado entra para aproveitar o milho e o <strong>DDG</strong> das usinas de etanol.</li>
           <li><strong>Persona Comum:</strong> Pecuarista Lavoura &amp; Pecuária e Empresário.</li>
           <li><strong>Oportunidade GC:</strong> Vender bezerros de qualidade para quem tem excesso de grão e precisa de giro rápido.</li>
         </ul>
 
-        <h4>Eixo BR-364 / Noroeste — Polo de Gigantes</h4>
+        <h4>1.5.3 Eixo da BR-364 / Noroeste (Polo de Gigantes)</h4>
+        <p>Esta é a região de maior tecnificação. O gado aqui entra para "limpar" o milho da segunda safra.</p>
         <ul>
-          <li><strong>Maior tecnificação do estado.</strong> O gado entra para "limpar" o milho da segunda safra.</li>
-          <li><strong>Grupos:</strong> Amaggi, Locks e Bom Futuro operam massivamente nesta rota.</li>
-          <li><strong>Cidades-Chave:</strong> Sapezal, Campo Novo do Parecis, Tangará da Serra.</li>
+          <li><strong>Grupos:</strong> Amaggi, Locks e Bom Futuro possuem operações massivas nesta rota.</li>
+          <li><strong>Cidades-Chave:</strong> Sapezal, Campo Novo do Parecis e Tangará da Serra.</li>
           <li><strong>O que compram:</strong> Bezerros e Bois Magros de alto padrão (F1 Angus e CEIP) para terminação rápida.</li>
         </ul>
 
-        <h4>Vale do Araguaia — O Novo Eldorado</h4>
+        <h4>1.5.4 Vale do Araguaia (O Novo Eldorado)</h4>
+        <p>Uma região que transicionou da pecuária extensiva para a agricultura de larga escala, atraindo compradores que buscam volume.</p>
         <ul>
-          <li><strong>Grupos:</strong> Amaggi (Água Boa e São Félix do Araguaia) e grandes fundos de investimento.</li>
-          <li><strong>Cidades-Chave:</strong> Água Boa, Querência, Vila Rica.</li>
-          <li><strong>O que compram:</strong> Lotes volumosos e padronizados. Exigem Compliance Total (Cawbot Ok).</li>
+          <li><strong>Grupos:</strong> Amaggi (unidades em Água Boa e São Félix do Araguaia) e grandes fundos de investimento.</li>
+          <li><strong>Cidades-Chave:</strong> Água Boa, Querência e Vila Rica.</li>
+          <li><strong>O que compram:</strong> Lotes volumosos e padronizados para recria e engorda. Exigem Compliance Total (Cawbot Ok).</li>
         </ul>
 
-        <h4>Região Sudeste / Sul — A Pecuária Tecnificada</h4>
+        <h4>1.5.5 Região Sudeste / Sul (A Pecuária Tecnificada, Logística e Indústria)</h4>
+        <p>Próximo à sede administrativa dos grandes grupos e dos maiores terminais logísticos.</p>
         <ul>
           <li><strong>Cidades Polo:</strong> Rondonópolis, Itiquira, Primavera do Leste, Cuiabá.</li>
-          <li><strong>Ciclo Dominante:</strong> Engorda — confinamentos de grande porte.</li>
-          <li><strong>Perfil de Gado:</strong> Boi China, Gado CEIP e Senepol. Foco total em carcaça e bônus de frigorífico.</li>
-          <li><strong>Oportunidade GC:</strong> Atuar na ponta final da cadeia, conectando reposição de bois magros de alto padrão.</li>
+          <li><strong>Ciclo Dominante:</strong> Engorda (Confinamentos de Grande Porte).</li>
+          <li><strong>Perfil de Gado:</strong> Boi China, Gado CEIP e Taurinos Adaptados (Senepol). Foco total em carcaça e bônus de frigorífico.</li>
+          <li><strong>Persona Comum:</strong> Pecuarista Profissional e Compradores de Grandes Grupos.</li>
+          <li><strong>Grupos:</strong> Sede do grupo Bom Futuro (Cuiabá) e operações em Itiquira e Rondonópolis.</li>
+          <li><strong>O que compram:</strong> Animais para a reposição para confinamentos estratégicos próximos aos frigoríficos de exportação.</li>
+          <li><strong>Oportunidade GC:</strong> Atuar na ponta final da cadeia, conectando o gado reposição de bois magros de alto padrão.</li>
         </ul>
 
-        <h4>Região do Pantanal — O Reservatório Genético</h4>
+        <h4>1.5.6 Região do Pantanal (O Reservatório Genético)</h4>
         <ul>
           <li><strong>Cidades Polo:</strong> Cáceres, Poconé.</li>
+          <li><strong>Ciclo Dominante:</strong> Cria e Recria.</li>
           <li><strong>Perfil de Gado:</strong> Nelore e Raças Crioulas (Pantaneiro). Gado extremamente rústico.</li>
-          <li><strong>Oportunidade GC:</strong> Oferecer Gado Crioulo ("gado de uma marca só") para compradores que buscam animais que "não sentem" a viagem.</li>
+          <li><strong>Persona Comum:</strong> <strong>Pecuarista Raiz</strong> (Tradição secular).</li>
+          <li><strong>Oportunidade GC:</strong> Oferecer o diferencial de <strong>Gado Crioulo</strong> ("gado de uma marca só") para compradores que buscam animais que "não sentem" a viagem.</li>
         </ul>
 
+        <h3>Resumo Estratégico para o Vendedor (MT)</h3>
         <table class="data-table">
           <thead>
             <tr><th>Polo</th><th>Ciclo</th><th>Gado Principal</th><th>Persona Foco</th></tr>
@@ -393,193 +599,373 @@
           <tbody>
             <tr><td>Norte</td><td>Cria</td><td>Nelore</td><td>Raiz</td></tr>
             <tr><td>Médio-Norte</td><td>Terminação</td><td>Cruzados (F1)</td><td>Lavoura &amp; Pecuária</td></tr>
-            <tr><td>Noroeste (BR-364)</td><td>Terminação</td><td>F1 Angus / CEIP</td><td>Grandes Grupos</td></tr>
+            <tr><td>Noroeste (364)</td><td>Terminação</td><td>F1 Angus / CEIP</td><td>Grandes Grupos (Amaggi/Locks/BF)</td></tr>
             <tr><td>Sudeste</td><td>Engorda</td><td>Boi China / CEIP</td><td>Profissional / Grande Grupo</td></tr>
             <tr><td>Pantanal</td><td>Cria</td><td>Crioulo / Nelore</td><td>Raiz</td></tr>
           </tbody>
         </table>
 
-        <h3>Corredores Logísticos — MT</h3>
+        <h3>1.5.5 – Corredores Logísticos e Dinâmica de Frete (MT)</h3>
+        <p>Os fluxos logísticos no Mato Grosso são determinados pela necessidade de movimentar o gado entre as áreas de produção (Cria e Recria) e os centros de consumo ou industrialização (Engorda e Frigoríficos).</p>
+
+        <h4>1.5.6 Eixo da BR-163 (O "Pulmão" da Integração)</h4>
+        <p>Este eixo conecta o <strong>Norte ao Sul</strong> do estado e é a via mais movimentada.</p>
         <ul>
-          <li><strong>BR-163 — O "Pulmão" da Integração:</strong> Conecta Norte ao Sul. Bezerros do Norte descem para o Médio-Norte; boi gordo desce para frigoríficos de Cuiabá e Rondonópolis. Atenção: durante a safra de soja/milho, o frete sobe e os caminhões "boiadeiros" somem.</li>
-          <li><strong>BR-158 — O Corredor do Araguaia:</strong> Frete mais caro do estado pela extensão. Grandes lotes saem do Vale do Araguaia para Rondonópolis.</li>
-          <li><strong>BR-070/BR-174 — O Corredor do Oeste:</strong> "Pulo do Gato" — caminhões que levam insumos para a fronteira voltam com frete de retorno mais barato, trazendo gado do Pantanal para o centro.</li>
+          <li><strong>Fluxo de Reposição (Bezerros):</strong> Os bezerros saem do <strong>Norte</strong> (Alta Floresta, Juara, Colniza) e <strong>descem</strong> em direção ao Médio-Norte (Sinop, Sorriso, Lucas do Rio Verde) para a recria e engorda intensiva com milho/DDG.</li>
+          <li><strong>Fluxo de Abate (Boi Gordo):</strong> O gado pronto no Médio-Norte <strong>desce</strong> em direção aos grandes frigoríficos da região de Cuiabá e Rondonópolis, ou segue para exportação.</li>
+          <li><strong>Atenção Logística:</strong> Durante a safra de soja e milho, o valor do frete sobe e a disponibilidade de caminhões "boiadeiros" cai, pois muitos motoristas migram para o transporte de grãos.</li>
         </ul>
 
-        <h3>Rondônia — Polos Estratégicos</h3>
-
-        <h4>Região Norte (Porto Velho e Entorno)</h4>
+        <h4>1.5.7 Eixo da BR-158 (O Corredor do Araguaia)</h4>
+        <p>Conecta o <strong>Sudeste ao Nordeste</strong> do estado, sendo uma rota de longas distâncias.</p>
         <ul>
-          <li><strong>Principais Cidades:</strong> Porto Velho, Nova Mamoré, Buritis, Candeias do Jamari.</li>
-          <li><strong>Perfil:</strong> Cria e Recria. Forte produção de bezerros que abastece o restante do estado. O confinamento cresce em Porto Velho para atender a exportação.</li>
+          <li><strong>Fluxo Principal:</strong> Grandes lotes de bezerros e garrotes saem do <strong>Nordeste/Vale do Araguaia</strong> (Vila Rica, Confresa) e descem para o <strong>Sudeste</strong> (Primavera do Leste, Rondonópolis) para serem terminados em confinamentos de grande porte.</li>
+          <li><strong>Dinâmica:</strong> É o frete mais caro do estado devido à extensão da rodovia e à menor densidade de frigoríficos no extremo norte deste eixo, o que obriga o gado a viajar muitos quilômetros.</li>
         </ul>
 
-        <h4>Região Central (Eixo BR-364)</h4>
+        <h4>1.5.8 Eixo da BR-070 / BR-174 (O Corredor do Oeste)</h4>
+        <p>Conecta a <strong>Fronteira e o Pantanal ao Centro</strong> do estado.</p>
         <ul>
-          <li><strong>Principais Cidades:</strong> Ji-Paraná, Jaru, Ouro Preto do Oeste, Presidente Médici, Ariquemes.</li>
-          <li><strong>Perfil:</strong> Recria e Terminação. Ji-Paraná e Ariquemes são polos de engorda com forte semiconfinamento e confinamentos estratégicos.</li>
+          <li><strong>Fluxo de Reposição:</strong> O gado Nelore e o <strong>Gado Crioulo</strong> saem de <strong>Cáceres e Pontes e Lacerda</strong> em direção aos sistemas de engorda no centro do estado (região de Tangará da Serra e Cuiabá).</li>
+          <li><strong>Oportunidade de Frete (O "Pulo do Gato"):</strong> Como muitos caminhões levam insumos, sal mineral e suplementação para as fazendas da fronteira, eles costumam ter o <strong>"frete de retorno"</strong> mais barato para trazer o gado de volta para o centro do estado.</li>
         </ul>
 
-        <h4>Vale do Guaporé (Fronteira com Bolívia)</h4>
+        <h4>1.5.9 Resumo dos Movimentos Estratégicos</h4>
         <ul>
-          <li><strong>Principais Cidades:</strong> São Francisco do Guaporé, Costa Marques, Alta Floresta d'Oeste.</li>
-          <li><strong>Perfil:</strong> Pastagens extensas e perfil tradicional. "Fábrica de Bezerros" da fronteira.</li>
+          <li><strong>Cria</strong> (Norte/Araguaia/Pantanal) &gt; <strong>Recria/Engorda</strong> (Médio-Norte/Sudeste).</li>
+          <li><strong>Engorda</strong> (Confinamentos) &gt; <strong>Frigoríficos</strong> (Rondonópolis/Cuiabá/Várzea Grande).</li>
+        </ul>
+
+        <h3>Polos de Pecuária (RO)</h3>
+
+        <div class="visual-block">
+          <svg viewBox="0 0 680 540" role="img" aria-label="Mapa dos polos pecuários de Rondônia">
+            <text class="th" x="340" y="32" text-anchor="middle">Rondônia — polos pecuários</text>
+            <g transform="translate(0, 50)">
+              <path d="M367.1,377.5L363.0,378.9L360.6,377.2L355.3,368.6L356.8,366.1L349.7,360.8L349.0,362.9L347.0,361.6L346.9,363.8L343.3,364.4L343.8,366.5L334.2,364.2L329.0,360.3L329.4,357.3L324.5,357.4L320.7,353.0L307.5,348.0L296.4,348.5L295.2,352.9L291.0,354.8L281.2,351.3L278.9,352.9L278.0,350.7L275.8,353.5L275.3,350.0L270.9,349.2L267.1,352.7L266.4,349.5L258.5,348.7L250.3,341.3L251.8,337.4L250.3,332.1L247.8,333.6L236.6,329.5L235.6,322.1L232.9,327.3L230.1,322.1L226.8,324.7L228.5,320.1L226.3,316.6L220.6,317.9L218.3,315.3L216.2,317.1L212.3,315.5L213.4,308.5L209.4,306.2L208.1,294.4L201.1,295.3L201.2,297.9L195.8,294.9L198.6,290.2L197.3,284.2L199.0,281.5L191.9,278.6L189.9,268.4L193.1,266.2L189.2,264.8L188.1,258.8L191.2,257.0L187.9,253.2L193.5,249.2L192.4,244.7L196.1,241.3L193.6,237.1L194.3,232.9L187.6,227.4L189.3,219.7L184.0,214.4L185.3,211.5L183.0,204.3L193.4,185.1L190.1,164.9L193.6,157.7L185.6,146.0L181.8,144.8L178.8,147.6L177.7,153.3L173.1,155.1L173.4,157.6L168.3,156.9L165.5,153.0L162.4,154.9L164.3,150.6L159.9,153.0L158.2,149.6L156.2,153.7L155.9,151.2L151.4,154.0L149.5,150.8L143.6,152.2L142.5,155.0L135.9,153.2L134.3,155.4L133.8,153.2L130.0,153.3L126.2,156.9L123.7,155.4L115.4,157.3L109.9,161.6L109.2,159.2L95.7,161.2L82.0,155.4L83.8,151.3L87.9,151.1L96.4,144.4L104.4,142.1L112.4,132.4L111.2,125.5L118.6,127.7L119.9,125.9L128.4,127.5L143.3,125.9L156.5,138.6L161.5,136.7L164.7,128.8L170.8,126.0L178.4,130.4L182.6,129.9L181.7,118.8L186.3,120.4L196.4,114.5L199.3,116.6L201.0,127.0L207.4,127.4L218.9,114.9L220.6,98.8L226.3,95.2L243.1,96.8L264.2,90.4L265.1,95.4L277.0,92.6L277.4,76.8L278.8,74.8L285.9,74.8L288.9,65.2L291.9,67.0L293.6,63.9L289.8,58.0L292.3,55.4L289.5,53.1L292.0,46.6L297.6,43.5L304.0,46.4L308.3,40.6L306.5,36.8L315.3,25.3L315.8,20.0L372.7,21.3L383.9,29.1L384.3,35.0L387.0,39.6L393.4,43.1L396.1,50.4L400.5,47.2L407.9,50.9L410.0,67.0L414.0,69.1L415.0,64.5L420.9,65.6L421.7,69.0L420.0,69.5L425.5,81.1L432.4,80.9L435.8,86.7L445.0,84.9L446.7,76.0L451.2,77.2L455.7,72.7L461.8,75.2L463.6,80.6L469.6,82.3L473.7,89.6L467.3,102.4L469.5,113.5L461.6,115.5L463.1,116.2L462.1,122.3L467.5,124.1L465.7,130.4L469.5,132.5L467.7,133.4L470.4,134.4L471.2,140.8L473.1,141.8L471.0,146.4L465.9,148.3L469.1,149.9L467.9,153.4L470.7,159.7L463.9,180.5L467.1,182.0L465.7,187.3L474.2,199.8L471.5,220.4L473.4,221.5L473.3,227.5L470.6,227.3L469.9,238.7L467.7,241.4L547.7,241.6L548.7,245.5L555.9,250.4L555.9,247.8L559.3,246.6L561.6,249.6L566.8,250.8L582.6,250.9L582.8,259.5L587.5,267.2L587.3,271.6L573.0,285.8L573.5,304.0L577.0,308.1L582.5,309.3L583.0,317.9L588.8,324.4L589.3,333.8L598.0,340.8L592.0,350.9L586.2,351.5L576.4,361.0L575.6,380.4L572.8,386.2L567.6,387.0L560.7,395.1L561.7,399.8L554.7,411.2L553.0,422.5L535.1,431.1L529.4,440.0L516.9,434.5L513.7,428.8L507.6,429.5L508.9,425.9L507.0,424.9L503.6,426.7L501.4,425.3L500.3,428.2L494.6,426.4L493.8,428.5L486.3,424.2L473.6,429.9L466.1,427.2L465.7,425.0L446.3,429.4L442.5,420.8L436.8,419.0L433.7,413.4L426.3,408.3L426.2,401.2L423.7,401.1L422.2,397.5L420.7,400.4L418.9,397.3L414.7,400.6L404.3,398.6L401.4,393.9L397.8,395.3L389.7,392.2L390.6,390.4L388.5,390.3L386.9,386.6L381.2,390.7L377.5,389.9L375.5,384.8L372.6,385.4L367.1,377.5Z"
+                fill="#F5F0E5" stroke="#584e41" stroke-width="1.2" stroke-linejoin="round"/>
+              <g opacity="0.45">
+                <circle cx="294.9" cy="78.2" r="42" fill="#1D9E75"/>
+                <circle cx="190.0" cy="198.4" r="38" fill="#1D9E75"/>
+                <circle cx="300.1" cy="184.3" r="38" fill="#1D9E75"/>
+                <circle cx="438.2" cy="234.0" r="35" fill="#BA7517"/>
+                <circle cx="400.4" cy="201.2" r="32" fill="#BA7517"/>
+                <circle cx="358.3" cy="162.7" r="32" fill="#BA7517"/>
+                <circle cx="418.5" cy="221.5" r="32" fill="#BA7517"/>
+                <circle cx="319.1" cy="319.7" r="35" fill="#3B6D11"/>
+                <circle cx="271.4" cy="347.8" r="35" fill="#3B6D11"/>
+                <circle cx="434.7" cy="310.4" r="32" fill="#3B6D11"/>
+                <circle cx="570.7" cy="370.1" r="38" fill="#993C1D"/>
+                <circle cx="516.2" cy="356.5" r="34" fill="#993C1D"/>
+                <circle cx="475.1" cy="274.6" r="32" fill="#993C1D"/>
+                <circle cx="493.9" cy="291.7" r="32" fill="#993C1D"/>
+                <circle cx="541.5" cy="397.7" r="32" fill="#993C1D"/>
+              </g>
+              <g fill="#0b0c0e">
+                <circle cx="294.9" cy="78.2" r="3"/><circle cx="190.0" cy="198.4" r="3"/>
+                <circle cx="300.1" cy="184.3" r="3"/><circle cx="438.2" cy="234.0" r="3"/>
+                <circle cx="400.4" cy="201.2" r="3"/><circle cx="358.3" cy="162.7" r="3"/>
+                <circle cx="418.5" cy="221.5" r="3"/><circle cx="319.1" cy="319.7" r="3"/>
+                <circle cx="271.4" cy="347.8" r="3"/><circle cx="434.7" cy="310.4" r="3"/>
+                <circle cx="570.7" cy="370.1" r="3"/><circle cx="516.2" cy="356.5" r="3"/>
+                <circle cx="475.1" cy="274.6" r="3"/><circle cx="493.9" cy="291.7" r="3"/>
+                <circle cx="541.5" cy="397.7" r="3"/>
+              </g>
+              <g font-size="11" fill="#0b0c0e">
+                <text x="300" y="74" text-anchor="start">Porto Velho</text>
+                <text x="184" y="194" text-anchor="end">Nova Mamoré</text>
+                <text x="306" y="180" text-anchor="start">Buritis</text>
+                <text x="444" y="234" text-anchor="start">Ji-Paraná</text>
+                <text x="406" y="197" text-anchor="start">Jaru</text>
+                <text x="364" y="158" text-anchor="start">Ariquemes</text>
+                <text x="424" y="218" text-anchor="start">Ouro Preto do Oeste</text>
+                <text x="313" y="316" text-anchor="end">São Francisco do Guaporé</text>
+                <text x="265" y="344" text-anchor="end">Costa Marques</text>
+                <text x="440" y="307" text-anchor="start">Alta Floresta d'Oeste</text>
+                <text x="576" y="367" text-anchor="start">Vilhena</text>
+                <text x="510" y="370" text-anchor="end">Chupinguaia</text>
+                <text x="481" y="271" text-anchor="start">Cacoal</text>
+                <text x="499" y="290" text-anchor="start">Pimenta Bueno</text>
+                <text x="547" y="395" text-anchor="start">Colorado do Oeste</text>
+              </g>
+            </g>
+            <g transform="translate(40, 490)">
+              <rect x="0" y="0" width="600" height="36" rx="8" fill="#f0ebe0" stroke="#d9d4c5" stroke-width="0.5"/>
+              <circle cx="20" cy="18" r="6" fill="#1D9E75" opacity="0.55"/><text class="ts" x="32" y="22">Cria/Recria — Norte</text>
+              <circle cx="170" cy="18" r="6" fill="#BA7517" opacity="0.55"/><text class="ts" x="182" y="22">Eixo BR-364 (Terminação)</text>
+              <circle cx="335" cy="18" r="6" fill="#3B6D11" opacity="0.55"/><text class="ts" x="347" y="22">Vale do Guaporé</text>
+              <circle cx="460" cy="18" r="6" fill="#993C1D" opacity="0.55"/><text class="ts" x="472" y="22">Cone Sul (Exportação)</text>
+            </g>
+          </svg>
+          <p class="visual-caption">Polos pecuários de Rondônia e suas vocações produtivas</p>
+        </div>
+
+        <h4>1.5.10 Região Norte (Porto Velho e Entorno)</h4>
+        <p>É a região com o maior volume de animais e onde a pecuária mais cresce em área.</p>
+        <ul>
+          <li><strong>Principais Cidades:</strong> Porto Velho, Nova Mamoré, Buritis e Candeias do Jamari.</li>
+          <li><strong>Perfil:</strong> <strong>Cria e Recria.</strong> Devido às grandes extensões de terra e abertura de novas áreas (especialmente em Porto Velho e Nova Mamoré), há uma forte produção de bezerros que abastece o restante do estado. No entanto, o confinamento vem crescendo em Porto Velho para atender a exportação.</li>
+        </ul>
+
+        <h4>1.5.11 Região Central (Eixo da BR-364)</h4>
+        <p>É o "coração" da terminação e onde se concentra a maior parte da indústria frigorífica.</p>
+        <ul>
+          <li><strong>Principais Cidades:</strong> Ji-Paraná, Jaru, Ouro Preto do Oeste, Presidente Médici e Ariquemes.</li>
+          <li><strong>Perfil:</strong> <strong>Recria e Terminação (Engorda).</strong> Cidades como <strong>Ji-Paraná</strong> e <strong>Ariquemes</strong> são polos de engorda, com forte presença de semiconfinamento e confinamentos estratégicos. É para onde o gado do Norte e do Vale do Guaporé costuma "subir" para o abate.</li>
+        </ul>
+
+        <h4>1.5.12 Vale do Guaporé (Fronteira com Bolívia)</h4>
+        <p>Região de pastagens extensas e perfil mais tradicional.</p>
+        <ul>
+          <li><strong>Principais Cidades:</strong> São Francisco do Guaporé, Costa Marques e Alta Floresta d'Oeste.</li>
+          <li><strong>Perfil:</strong> <strong>Cria.</strong> É considerada a "fábrica de bezerros" de Rondônia. A logística mais difícil favorece a cria, pois o transporte de animais leves (bezerros) para regiões de recria no centro do estado é mais eficiente do que o transporte de bois gordos.</li>
+        </ul>
+
+        <h4>1.5.13 Região Sul / Cone Sul</h4>
+        <p>Região de pecuária intensiva e que divide espaço com a soja.</p>
+        <ul>
+          <li><strong>Principais Cidades:</strong> Vilhena, Chupinguaia, Pimenta Bueno, Cacoal e Colorado do Oeste.</li>
+          <li><strong>Perfil:</strong> <strong>Terminação e Ciclo Completo.</strong> <strong>Chupinguaia</strong> é um dos maiores polos de abate do estado. Com a abundância de grãos (milho e soja) em Vilhena, a terminação em confinamento é muito forte aqui.</li>
+        </ul>
+
+        <h4>1.5.14 – Corredores Logísticos e Dinâmica de Frete (RO)</h4>
+        <p>A logística em Rondônia em 2026 está passando por uma transformação profunda devido à <strong>concessão da BR-364</strong> (Eixo Vilhena–Porto Velho), que é a espinha dorsal do estado.</p>
+
+        <h4>1.5.15 O Corredor da BR-364 (A Concessão "Nova 364")</h4>
+        <p>Este trecho liga o Cone Sul ao Porto de Porto Velho. Em 2026, as obras foram antecipadas para reduzir o "custo invisível" da má conservação.</p>
+        <ul>
+          <li><strong>Melhoria na Fluidez:</strong> Estão sendo recuperados pavimentos e sinalização. A estimativa é de uma <strong>redução de até 20% nos custos operacionais</strong> de transporte (mesmo com a entrada do pedágio), devido à menor quebra de caminhões e economia de combustível.</li>
+          <li><strong>Pedágios:</strong> Em troca do pagamento, as transportadoras agora contam com socorro mecânico e guinchos 24h, o que reduz o risco de carga parada (gado em pé no sol por muito tempo).</li>
+          <li><strong>Foco de Abate:</strong> Este eixo liga cidades como <strong>Vilhena, Jaru e Ariquemes</strong> (grandes polos de frigoríficos como JBS e Irmãos Gonçalves) diretamente aos pontos de saída.</li>
+        </ul>
+
+        <h4>1.5.16 A Logística da "Fábrica de Bezerros" (Vale do Guaporé)</h4>
+        <p>A logística aqui é o maior desafio e, por isso, o gado de reposição tende a ser mais barato na origem.</p>
+        <ul>
+          <li><strong>A Rota da Reposição:</strong> O fluxo normal é o gado sair de cidades como <strong>São Francisco do Guaporé</strong> e <strong>Alta Floresta</strong> em direção ao Eixo Central (Ji-Paraná/Ariquemes).</li>
+          <li><strong>Custo de Frete:</strong> Como as estradas estaduais (ROs) que ligam o Vale do Guaporé à BR-364 ainda sofrem com a sazonalidade das chuvas, o frete boiadeiro nestas regiões pode ser <strong>15% a 25% mais caro</strong> por quilômetro rodado do que no eixo principal pavimentado.</li>
+        </ul>
+
+        <h4>1.5.17 Integração com o Noroeste e Ponta do Abunã</h4>
+        <ul>
+          <li><strong>Nova Fronteira Logística:</strong> Com a ponte sobre o Rio Madeira em Abunã, a integração com o Acre e o Amazonas (Lábrea/Boca do Acre) consolidou-se.</li>
+          <li><strong>Fluxo de Animais:</strong> Bezerros que descem do Amazonas agora chegam com muito mais facilidade aos confinamentos de <strong>Porto Velho e Ariquemes</strong>. A logística de "mão dupla" (leva boi, traz grão) tem crescido nesta região.</li>
+        </ul>
+
+        <h4>1.5.18 Localização dos Frigoríficos Estratégicos (Pontos de Entrega)</h4>
+        <p>Os principais "destinos finais" dentro do estado:</p>
+        <ul>
+          <li><strong>Cone Sul (Vilhena/Chupinguaia):</strong> Fortíssimo para exportação (<strong>Marfrig</strong>). Logística facilitada pela proximidade com o Mato Grosso para insumos de confinamento (milho/farelo).</li>
+          <li><strong>Eixo Central (Jaru/Ji-Paraná):</strong> Maior concentração de plantas de médio e grande porte. É onde o mercado de "boi comum" e "boi China" tem mais liquidez.</li>
+          <li><strong>Norte (Porto Velho):</strong> Crescimento focado em animais que vêm do Amazonas e do Acre para abate imediato ou exportação via porto.</li>
         </ul>
       </section>
 
       <!-- 1.6 TIPOLOGIA E QUALIDADE -->
       <section class="section-block" id="s1-6">
-        <h2>1.6 Tipologia e Qualidade</h2>
-        <p>A qualidade do lote é o ativo que você vende. Saber identificar o "Gado de Grifa" do "fundo de boiada" é o que garante sua credibilidade e a do lote junto ao comprador.</p>
+        <h2>1.6 – Tipologia e Qualidade</h2>
+        <p>No mercado comercial, a qualidade é medida pela capacidade do animal de transformar comida em arrobas no menor tempo possível.</p>
+        <p>Na Gado Certo, nossa missão é garantir que o animal que sai da fazenda de <strong>Origem</strong> seja um gerador de lucro na fazenda de <strong>Destino</strong>. O comprador (Invernista ou Confinador) busca eficiência biológica e facilidade de manejo. O vendedor/comprador deve saber identificar o gado que "se paga" e o gado que "dá prejuízo".</p>
 
-        <h3>1.6.1 O Padrão Desejado — O "Gado de Grifa"</h3>
+        <h3>1.6.1 – O Padrão Desejado (O "Gado de Grifa")</h3>
+        <p>Atributos que fazem o comprador fechar o negócio com segurança:</p>
         <ul>
-          <li>Animais com conformação racial bem definida (sem mistura "sem ponta").</li>
-          <li>Aprumos corretos — pernas retas, casco sem defeitos, mobilidade perfeita.</li>
-          <li>Mucosas rosadas e olhos vivos (indicativos de saúde e ausência de anemia por verminose).</li>
-          <li>Couro limpo, sem carrapatos em excesso ou sinais de sarna.</li>
-          <li>Homogeneidade de peso dentro do lote — quanto mais padronizado, mais fácil de vender e mais alto o preço.</li>
-          <li>Procedência conhecida (Gado Crioulo ou CEIP) — agrega valor pela transparência.</li>
+          <li><strong>Uniformidade de Lote (Parelha):</strong> Animais com o mesmo "frame" (tamanho) e idade. Isso permite que o comprador feche o pasto ou o cocho de uma vez, sem animais sobrando para trás no final do ciclo.</li>
+          <li><strong>Profundidade de Costelas:</strong> Fundamental para quem compra. Indica que o animal tem "caixa" para processar pasto ou ração. Animal estreito não tem espaço para o rúmen trabalhar.</li>
+          <li><strong>Saúde de Aprumos (Pés e Pernas):</strong> O boi comercial precisa caminhar para comer. Animal com bons aprumos tem maior "raio de pastejo", convertendo melhor o capim em arrobas.</li>
+          <li><strong>Pelo Lustroso e Couro Solto:</strong> No campo, isso é sinal de saúde e potencial de crescimento. Couro "elástico" indica que o animal ainda tem muito espaço para depositar musculatura.</li>
+          <li><strong>Temperamento Calmo:</strong> Essencial na venda entre pecuaristas. Gado manso aceita melhor a troca de fazenda, a nova dieta e não quebra as instalações do comprador.</li>
         </ul>
 
-        <h3>1.6.2 Fatores de Desvalorização</h3>
+        <h3>1.6.2 – Fatores de Desvalorização (O que "Gera Desconto")</h3>
+        <p>Estes itens não necessariamente desclassificam o animal, mas <strong>tiram valor comercial</strong> e são usados pelo comprador para baixar o preço:</p>
         <ul>
-          <li>Lote heterogêneo com grande variação de peso entre os animais.</li>
-          <li>Presença de animais com defeitos de aprumo (claudicação, casco rachado).</li>
-          <li>Sinais de carrapato ou mosca em alta infestação no momento da vistoria.</li>
-          <li>Animais franzinos ("fundo de boiada") misturados ao lote principal.</li>
-          <li>Fazenda com CAR irregular ou histórico de embargo ambiental.</li>
+          <li><strong>Gado "Caneludo" ou "Perna de Moça":</strong> Animais muito altos e estreitos. Gastam muita energia para manutenção e demoram a depositar gordura. O comprador vê isso como "atraso de vida".</li>
+          <li><strong>Despadronização Racial (Gado "Mestiço" sem Foco):</strong> Mistura de muitas raças sem critério. Isso dificulta a previsão de desempenho e o acabamento do lote.</li>
+          <li><strong>Diferença de Idade (Lote "Escada"):</strong> Bezerros de 8 meses misturados com garrotes de 15 meses. O preço por kg é diferente, bezerros tem valor kg maior que de garrote, além de o manejo nutricional ficar ineficiente, pois os maiores dominam o cocho.</li>
+          <li><strong>Umbigo Penduloso (Bimbada Baixa):</strong> Mesmo em bois de engorda, o umbigo muito baixo é visto como risco de lesão e infecção, exigindo mais atenção do pecuarista.</li>
         </ul>
 
-        <h3>1.6.3 Critérios de Rejeição</h3>
+        <p><strong>B. Exclusivos do F1 Angus x Nelore</strong></p>
         <ul>
-          <li>Animais com problemas sanitários graves (brucelose, tuberculose positivos).</li>
-          <li>Gado sem GTA ou documentação irregular.</li>
-          <li>Fazenda em área embargada pelo IBAMA ou com desmatamento ilegal não regularizado.</li>
-          <li>Animais com defeitos físicos que impeçam o transporte ou o abate (fraturas, hérnias severas).</li>
+          <li><strong>Presença de Chifres:</strong> O F1 de valor deve ser mocho. O "chifre" descaracteriza o cruzamento industrial de elite e causa brigas no confinamento.</li>
+          <li><strong>Bragados e Manchas Brancas:</strong> Manchas na barriga ou patas fogem do padrão visual "Premium" (preto ou vermelho sólido) exigido por compradores de grife.</li>
+          <li><strong>Animal "Nelorado" demais:</strong> Se o F1 parece um Nelore (orelha grande, cupim alto), ele não herdou a precocidade do Angus. O comprador não paga ágio por isso.</li>
+        </ul>
+
+        <h3>1.6.3 – Critérios de Rejeição (O que "Não Entra no Lote")</h3>
+        <p>Estes itens <strong>não devem ser aceitos</strong> no lote principal. Eles devem ser apartados e sinalizados como "Fundo" ou "Refugo":</p>
+
+        <p><strong>A. Defeitos Críticos (Nelore e F1)</strong></p>
+        <ul>
+          <li><strong>"Eradice" sem Peso:</strong> Bois velhos (+36 meses) que ainda não "fecharam". São animais que já passaram do pico metabólico e são ineficientes no gancho.</li>
+          <li><strong>Refugo de Desmama (Barrigudos):</strong> Bezerros com abdômen desproporcional e pelo arrepiado. Indica subnutrição severa; o animal "travou" e dificilmente terá bom ganho compensatório.</li>
+          <li><strong>Anomalias Graves de Aprumo:</strong> Gado "Sentado" (jarretes fechados) ou "Acavalo" (joelhos para frente). Prejuízo certo na recria a pasto.</li>
+        </ul>
+
+        <p><strong>B. Defeitos Sanitários e Patologias (O Risco de Contágio)</strong></p>
+        <p>Estes itens devem ser observados com rigor. Animais com estas características não podem seguir no lote padrão, pois colocam em risco o rebanho do comprador e a reputação do vendedor.</p>
+        <ul>
+          <li><strong>Papilomatose (Verrugas / Figueiras):</strong>
+            <ul>
+              <li><strong>O que é:</strong> Doença viral que causa verrugas na pele, especialmente no pescoço, cabeça e úbere.</li>
+              <li><strong>Por que rejeitar:</strong> É altamente contagiosa entre os animais. O comprador não quer "sujar" o seu curral e as suas mangas com o vírus. Além disso, as verrugas podem sangrar, atrair bicheiras e causar grande desconforto, travando o ganho de peso.</li>
+            </ul>
+          </li>
+          <li><strong>Dermatobiose (Infestação de Berne) ou Sarnas:</strong>
+            <ul>
+              <li><strong>O que é:</strong> Presença excessiva de nódulos de berne ou falhas de pelo por sarna/fungos.</li>
+              <li><strong>Por que rejeitar:</strong> Indica um sistema imunitário debilitado e falta de manejo sanitário na fazenda de origem. O animal gasta energia combatendo a infestação em vez de ganhar arrobas.</li>
+            </ul>
+          </li>
+          <li><strong>Ceratoconjuntivite (Cegueta / Nuvem no Olho):</strong>
+            <ul>
+              <li><strong>O que é:</strong> Inflamação ocular que deixa o olho opaco ou esbranquiçado.</li>
+              <li><strong>Por que rejeitar:</strong> Além de ser contagiosa em alguns casos, o animal com visão comprometida não encontra o melhor pasto, não chega primeiro ao cocho e torna-se perigoso no manejo por ser mais assustadiço.</li>
+            </ul>
+          </li>
+          <li><strong>Bicheiras (Miiases) e Feridas Abertas:</strong>
+            <ul>
+              <li><strong>O que é:</strong> Feridas com larvas ou cortes profundos não cicatrizados (muitas vezes causados por transporte inadequado ou manejo bruto).</li>
+              <li><strong>Por que rejeitar:</strong> Representa um custo imediato de tratamento e mão de obra para o comprador. Animal ferido é animal em sofrimento e com balança negativa.</li>
+            </ul>
+          </li>
+          <li><strong>Pododermatite (Frieira / Manqueira):</strong>
+            <ul>
+              <li><strong>O que é:</strong> Inflamações ou feridas nos cascos.</li>
+              <li><strong>Por que rejeitar:</strong> Um animal que manca é um animal que não produz. Na recria a pasto, o boi que não caminha, não come. É um "prejuízo ambulante".</li>
+            </ul>
+          </li>
         </ul>
       </section>
 
       <!-- 1.7 MERCADOS -->
       <section class="section-block" id="s1-7">
-        <h2>1.7 Mercados — Interno vs. Exportação</h2>
+        <h2>1.7 – Mercados: Interno vs. Exportação</h2>
+        <p>O Brasil é o maior exportador de carne bovina do mundo, mas o motor que sustenta o volume é o mercado doméstico. Entender essa balança é fundamental para o vendedor saber para onde o gado do cliente vai.</p>
 
-        <h3>1.7.1 O Mercado Interno — O Gigante Invisível</h3>
-        <p>O Brasil é o segundo maior consumidor de carne bovina do mundo. O mercado interno absorve a maior parte da produção e é o termômetro imediato de preços. A dinâmica é regional — frigoríficos do MT e RO abastecem tanto o mercado local quanto o transporte para outros estados.</p>
-
-        <h3>1.7.2 O Mercado de Exportação — A Elite do Giro</h3>
+        <h3>1.7.1 – O Mercado Interno (O Gigante Invisível)</h3>
+        <p>Embora a exportação brilhe nos jornais, cerca de <strong>75% a 80%</strong> de toda a carne produzida no Brasil fica aqui dentro.</p>
         <ul>
-          <li><strong>Boi China:</strong> O protocolo mais importante. Exige animal jovem (até 30 meses) e paga prêmio sobre a arroba.</li>
-          <li><strong>Europa (Cota Hilton):</strong> Exige rastreabilidade (SISBOV/Brinco), propriedade com CAR aprovado e sem histórico de desmatamento. O gado com brinco tem liquidez premium.</li>
-          <li><strong>Outros mercados (EAU, Egito, Chile):</strong> Menos restritivos que Europa e China, mas exigem protocolo sanitário e documentação em dia.</li>
+          <li><strong>Perfil do Consumo:</strong> O brasileiro consome, em média, de 25 a 30 kg de carne bovina por habitante/ano.</li>
+          <li><strong>O que "sobra" para o Brasil:</strong> Geralmente, a carne de animais que não se enquadram nas exigências rígidas da exportação (idade avançada, falta de acabamento de gordura ou questões de rastreabilidade).</li>
+          <li><strong>Dinâmica de Preço:</strong> É extremamente sensível ao poder de compra da população. Quando o preço sobe demais, o consumidor migra para o frango e o suíno.</li>
         </ul>
 
-        <h3>1.7.3 Competidores Internacionais</h3>
+        <h3>1.7.2 – O Mercado de Exportação (A Elite do Giro)</h3>
+        <p>Representa de <strong>20% a 25%</strong> da produção, mas é quem dita o preço da arroba (o famoso "Boi China").</p>
         <ul>
-          <li><strong>Argentina:</strong> Alta qualidade de carcaça (Angus/Hereford), mas instabilidade econômica limita volume exportado.</li>
-          <li><strong>Austrália:</strong> Principal concorrente do Brasil na China. Foco em grain-fed (alimentado a grão) de alta padronização.</li>
-          <li><strong>EUA:</strong> Forte no mercado interno e em mercados premium (USDA Choice/Prime). Produção de alto custo.</li>
-          <li><strong>Vantagem Brasil:</strong> Escala, custo de produção competitivo e diversidade racial para atender múltiplos mercados.</li>
+          <li><strong>O Destino Principal (China):</strong> Compra volume massivo. Exige o "Padrão China": animais jovens (até 30 meses/dentição específica) e com acabamento de gordura.</li>
+          <li><strong>União Europeia:</strong> Exige rastreabilidade total (SISBOV) e é o mercado que paga os maiores prêmios por cortes nobres.</li>
+          <li><strong>EUA e Oriente Médio:</strong> Compram carne industrial (hambúrguer) e carne com certificação religiosa (Halal), respectivamente.</li>
         </ul>
+
+        <h3>1.7.3 – Competidores Internacionais: Quem são e o que fazem?</h3>
+        <p>O Brasil não joga sozinho. Nossos principais concorrentes têm perfis bem definidos:</p>
+        <table class="data-table">
+          <thead>
+            <tr><th>Competidor</th><th>O que Produz</th><th>Para Quem Vende</th><th>Pontos Fortes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Austrália</strong></td><td>Carne de alta qualidade (Taurinos/Wagyu) e gado em pé.</td><td>Ásia (Japão/Coreia) e EUA.</td><td>Sanidade impecável e logística privilegiada para a Ásia.</td></tr>
+            <tr><td><strong>EUA</strong></td><td>Carne de confinamento (muito grão), extremamente marmorizada.</td><td>Japão, Coreia do Sul e mercado interno.</td><td>Maior produtor mundial; referência em qualidade de acabamento.</td></tr>
+            <tr><td><strong>Argentina</strong></td><td>Carne de pasto (Taurinos/Angus) com fama mundial.</td><td>China (volume) e Europa (qualidade).</td><td>Marca "Carne Argentina" é muito forte; alto padrão genético.</td></tr>
+            <tr><td><strong>Uruguai</strong></td><td>Carne 100% rastreada e natural (pasto).</td><td>China, EUA e Europa.</td><td>Rastreabilidade obrigatória em todo o rebanho; status sanitário altíssimo.</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <!-- 1.8 FATORES CRÍTICOS -->
       <section class="section-block" id="s1-8">
-        <h2>1.8 Fatores Críticos para Tomada de Decisão</h2>
-        <p>Uma negociação de gado raramente falha por falta de interesse. Ela falha por não ter gerenciado os fatores operacionais corretamente. O vendedor de elite os antecipa.</p>
+        <h2>1.8 – Fatores Críticos para Tomada de Decisão</h2>
+        <p>Para o pecuarista, a decisão de fechar um negócio passa por uma soma de fatores, conta matemática que vai além do valor por cabeça, fatores emocionais. É preciso dominar estes pilares para "destravar" a venda:</p>
 
-        <h3>1.8.1 Logística e Frete</h3>
+        <h3>1.8.1 A logística e o manejo.</h3>
+
+        <h4>1. Custo do Frete (A Distância que Pesa)</h4>
+        <p>O frete pode representar de 3% a 8% do valor do animal.</p>
         <ul>
-          <li>O frete é muitas vezes o fator que viabiliza ou inviabiliza um negócio — especialmente em lotes de bezerros de menor valor individual.</li>
-          <li>Distância do curral ao frigorífico ou ao destino final impacta diretamente na margem do comprador.</li>
-          <li>Disponibilidade de caminhões boiadeiros cai durante a safra de grãos — planeje com antecedência.</li>
-          <li>Frete de retorno é a oportunidade de ouro — caminhões que já foram à fazenda com insumos voltam mais baratos.</li>
+          <li><strong>Decisão:</strong> O comprador sempre calcula o valor do animal <strong>"posto na fazenda"</strong>.</li>
+          <li><strong>Fator crítico:</strong> A estratégia é <strong>otimizar a carga</strong> (ex: completar o caminhão para não pagar "espaço vazio").</li>
         </ul>
 
-        <h3>1.8.2 Quebra de Peso e Estresse no Manejo</h3>
+        <h4>2. Quebra de Peso (O Inimigo Invisível)</h4>
+        <p>O gado perde peso desde o momento em que sai do pasto até chegar ao destino (estresse, desidratação, limpeza do trato).</p>
         <ul>
-          <li>Todo animal perde peso durante o transporte. Longas distâncias = maior quebra = menor valor recebido.</li>
-          <li>Manejo violento no curral antes do embarque gera stress → perda de peso → queda de imunidade → possíveis mortes.</li>
-          <li>Embarque à tarde reduz o estresse térmico dos animais. Prática recomendada no MT/RO.</li>
+          <li><strong>O Fator Crítico:</strong> A quebra varia de <strong>3% a 6%</strong> em viagens longas.</li>
+          <li><strong>Negociação:</strong> É aqui que se define se o gado será pesado na <strong>origem (com desconto de balança)</strong> ou no <strong>destino</strong>.</li>
         </ul>
 
-        <h3>1.8.3 Documentação</h3>
+        <h4>3. Documentação (O Destravador Jurídico)</h4>
+        <p>Sem papel, o boi não anda.</p>
         <ul>
-          <li>GTA deve ser emitida com antecedência e cobrir a quantidade exata de animais.</li>
-          <li>NFP deve ser emitida em conformidade fiscal (DIFAL, IE ativa do vendedor e comprador).</li>
-          <li>Barreiras fiscais podem reter caminhões sem documentação correta — risco financeiro e reputacional para GC.</li>
+          <li><strong>Fatores:</strong> GTA (Guia de Trânsito Animal), Nota Fiscal, exames sanitários (se necessário) e a análise de <strong>Compliance (CAR/Cawbot)</strong>.</li>
+          <li><strong>Impacto:</strong> Um erro na documentação pode segurar um caminhão por horas ou dias, gerando custo de diária e aumentando a quebra de peso.</li>
         </ul>
 
-        <h3>1.8.4 Janelas e Sazonalidade</h3>
+        <h4>4. Estresse no Manejo (Bem-estar é Dinheiro)</h4>
+        <p>Gado estressado adoece, perde peso e pode até morrer no transporte.</p>
         <ul>
-          <li>O preço do boi gordo tem picos sazonais (geralmente no 2º e 3º trimestres).</li>
-          <li>A safra de grãos (jan–mar) aquece a demanda por boi magro para terminação em confinamento.</li>
-          <li>O período de seca (mai–set) pode apertar a oferta de pastagem, forçando o produtor a antecipar vendas.</li>
+          <li><strong>Fatores:</strong> O manejo no curral antes do embarque/pesagem deve ser calmo. Gado gritado, cutucado ou agredido chega "sentido".</li>
+          <li><strong>Ponto Crítico:</strong> Gado deve ser manejado com foco em bem-estar. Isso significa que ele vai chegar na sua fazenda e começar a comer no primeiro dia, sem o atraso do estresse.</li>
+        </ul>
+
+        <h4>5. Horário de Carregamento (O Perigo da Tarde)</h4>
+        <p>Carregar gado à tarde é uma prática comum, mas arriscada.</p>
+        <ul>
+          <li><strong>O Problema:</strong> Animais carregados sob sol forte (14h - 16h) sofrem muito mais estresse térmico. Além disso, se o caminhão quebrar à noite, o suporte logístico é muito mais difícil.</li>
+          <li><strong>Recomendação:</strong> Priorizar carregamentos na <strong>madrugada ou início da manhã</strong>. O gado viaja no fresco, chega mais disposto e a quebra de peso é menor.</li>
+        </ul>
+
+        <h4>6. O Animal (O Ativo Real)</h4>
+        <p>Tudo converge para a qualidade do lote que discutimos nos módulos anteriores.</p>
+        <ul>
+          <li><strong>O Check-final:</strong> O vendedor/comprador decidem com base na confiança de que o que ele viu na foto/vídeo é o que vai descer do caminhão.</li>
+          <li><strong>Ponto crítico:</strong> A <strong>Inspeção de Qualidade, por meio de visita ou vídeos</strong> é o fator que elimina o medo do comprador.</li>
+        </ul>
+
+        <h3>1.8.3 Janelas e Sazonalidade.</h3>
+
+        <h4>1 – Janelas e Sazonalidade: O Calendário do Pecuarista (Foco MT)</h4>
+        <p>É importante antecipar o movimento do mercado. Se o capim está secando, o gado vai aparecer; se a chuva chegou, o comprador vai sumir para reformar pasto.</p>
+
+        <h4>2 – A Janela das Águas (Outubro a Março)</h4>
+        <p>É o momento de <strong>bonança no pasto</strong>, mas de <strong>desafio logístico</strong>.</p>
+        <ul>
+          <li><strong>Visão do Pecuarista:</strong> O gado ganha peso rápido (o "boi das águas"). O produtor não tem pressa para vender, pois o custo de manutenção é baixo (capim em abundância).</li>
+          <li><strong>Desafio Logístico:</strong> É a época do "atoleiro". O custo do frete sobe e o risco de caminhão parado aumenta.</li>
+        </ul>
+
+        <h4>3 – A Janela da Transição / Safrinha (Abril a Junho)</h4>
+        <p>O momento em que a soja sai e entra o milho.</p>
+        <ul>
+          <li><strong>Visão do Pecuarista:</strong> Início da desmama. As vacas precisam ser aliviadas para recuperar o escore corporal.</li>
+          <li><strong>Ponto Crítico:</strong> O milho safrinha está crescendo. O pecuarista de <strong>Integração (ILP)</strong> começa a planejar a entrada do gado no restolho do milho ou no capim pós-colheita.</li>
+        </ul>
+
+        <h4>4 – A Janela da Seca (Julho a Setembro)</h4>
+        <p>O período crítico de "fogo no pasto" e falta de umidade.</p>
+        <ul>
+          <li><strong>Visão do Pecuarista:</strong> O capim perde proteína (vira "palha"). Quem não se planejou com silagem ou ração <strong>precisa desocupar o pasto</strong>.</li>
+          <li><strong>Pressão de Venda:</strong> O produtor vende para não ver o gado morrer de fome ou perder peso. O preço da arroba tende a sofrer pressão de baixa pela oferta forçada.</li>
         </ul>
       </section>
 
       <!-- 1.9 CICLO PECUÁRIO E PREÇOS -->
       <section class="section-block" id="s1-9">
-        <h2>1.9 Ciclo Pecuário e Formação de Preços</h2>
+        <h2>1.9 – O Ciclo Pecuário e a Formação de Preços</h2>
+        <p>O ciclo pecuário é um processo plurianual (geralmente de 5 a 7 anos) baseado na <strong>retenção ou descarte de fêmeas</strong>. Como a biologia da vaca não acelera, o mercado reage com atraso às mudanças de preço.</p>
 
-        <h3>1.9.1 As Duas Fases do Ciclo</h3>
+        <h3>1.9.1 – As Duas Fases do Ciclo</h3>
+
+        <h4>Fase 1: A Alta (Retenção de Fêmeas)</h4>
         <ul>
-          <li><strong>Fase de Expansão (Alta):</strong> Produtores retêm fêmeas para aumentar o rebanho. A oferta de boi gordo cai, os preços sobem. Boa hora para vender, difícil para comprar reposição barata.</li>
-          <li><strong>Fase de Liquidação (Baixa):</strong> Excesso de oferta — produtores vendem mais animais do que o mercado absorve com facilidade. Preços caem. Oportunidade de comprar reposição de qualidade a preço competitivo.</li>
+          <li><strong>O Cenário:</strong> O preço do bezerro sobe. O pecuarista de cria percebe que "vale a pena" produzir bezerros.</li>
+          <li><strong>A Ação:</strong> O produtor para de abater vacas e novilhas para usá-las como matrizes (reprodução).</li>
+          <li><strong>O Efeito:</strong> Como as fêmeas não vão para o frigorífico, a oferta total de carne diminui.</li>
+          <li><strong>Resultado no Preço:</strong> O preço da arroba do boi gordo e do bezerro <strong>dispara</strong> devido à escassez. É o momento em que o pecuarista está capitalizado.</li>
         </ul>
 
-        <h3>1.9.2 Influência nos Preços e Decisão de Negócio</h3>
+        <h4>Fase 2: A Baixa (Descarte de Fêmeas)</h4>
         <ul>
-          <li>Câmbio: Dólar alto favorece exportação → aumenta demanda interna pelo mesmo animal → sobe a @.</li>
-          <li>Preço do milho e DDG impacta diretamente o custo do confinamento — afeta o ágio que o terminador aceita pagar pelo boi magro.</li>
-          <li>Embargo sanitário internacional (ex: febre aftosa, doença de vaca louca) fecha mercados da noite para o dia.</li>
-        </ul>
-
-        <h3>1.9.3 Fatores que "Atropelam" o Ciclo</h3>
-        <ul>
-          <li>Seca severa: força liquidação antecipada de rebanhos inteiros — oportunidade pontual de lotes a preços abaixo do mercado.</li>
-          <li>Abertura ou fechamento de mercados internacionais muda o fluxo de demanda em semanas.</li>
-          <li>Política tributária (DIFAL, incentivos fiscais estaduais) pode tornar um estado mais competitivo do que outro da noite para o dia.</li>
-        </ul>
-
-        <div class="highlight-card">
-          <div class="label">🎯 Visão Estratégica por Ciclo de Produção</div>
-          <p>Ao cruzar Personas, Geografia e Qualidade com os Ciclos de Produção, o vendedor GC consegue <strong>antecipar a demanda</strong> antes que o cliente saiba que tem. Quem está terminando hoje vai precisar de reposição em 90 dias. Quem está na seca vai precisar vender antes do previsto. <strong>O dinheiro está na antecipação.</strong></p>
-        </div>
-      </section>
-
-      <!-- NAVEGAÇÃO -->
-      <div class="content-nav">
-        <a href="index.html">← Início</a>
-        <a href="https://script.google.com/macros/s/AKfycbxOD1wcf5c_QdRE5Ip-GUxKuM74ZlF1mr5jHVO_xcgZ3W2bMSboMw-E0bTqbYvNx8rB/exec" target="_blank">Fazer o Teste →</a>
-      </div>
-
-    </main>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>Academia <strong>Gado Certo</strong> · Uso interno · Todos os direitos reservados</p>
-  </footer>
-
-  <!-- SCROLL SPY -->
-  <script>
-    const sections = document.querySelectorAll('.section-block');
-    const navLinks = document.querySelectorAll('.sidebar-nav a');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navLinks.forEach(link => link.classList.remove('active'));
-          const id = entry.target.getAttribute('id');
-          const active = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
-          if (active) active.classList.add('active');
-        }
-      });
-    }, { rootMargin: '-20% 0px -70% 0px' });
-
-    sections.forEach(s => observer.observe(s));
-  </script>
-
-</body>
-</html>
+          <li><strong>O Cenário:</strong> A oferta de bezerros (fruto da retenção
