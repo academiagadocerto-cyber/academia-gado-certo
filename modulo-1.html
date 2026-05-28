@@ -97,6 +97,15 @@
     .slides-container { border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,.1); }
     .slides-container iframe { display:block; width:100%; height:700px; border:none; }
     .slides-note { margin-top:12px; font-size:13px; color:#a09480; font-style:italic; }
+    .btn-fullscreen {
+      display:inline-flex; align-items:center; gap:8px;
+      margin-top:14px; padding:12px 24px;
+      background:rgba(210,94,20,.15); border:1px solid rgba(210,94,20,.4);
+      color:#D25E14; font-weight:700; font-size:14px; letter-spacing:.02em;
+      border-radius:8px; text-decoration:none; cursor:pointer;
+      transition:background .15s, transform .1s;
+    }
+    .btn-fullscreen:hover { background:rgba(210,94,20,.28); transform:translateY(-1px); }
   </style>
 </head>
 <body>
@@ -1129,7 +1138,9 @@
         <div class="slides-container">
           <iframe src="https://drive.google.com/file/d/1mlj5iITm0uaWlYRPWuVY_LG1Tic-x6Vn/preview" allowfullscreen></iframe>
         </div>
-        <p class="slides-note">Use a barra de rolagem ou os botões do visualizador para navegar. Clique no ícone de tela cheia para expandir.</p>
+        <a class="btn-fullscreen" href="https://drive.google.com/file/d/1mlj5iITm0uaWlYRPWuVY_LG1Tic-x6Vn/view" target="_blank">
+          ⛶ Abrir em tela cheia
+        </a>
       </div>
 
       <!-- ═══ SEÇÃO 5: TESTE FINAL ═══ -->
