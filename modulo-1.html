@@ -7,43 +7,96 @@
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" type="image/png" href="assets/logo.png" />
   <style>
-    /* Visuais inline (diagrama de ciclos e mapas) */
-    .visual-block {
-      margin: 28px 0 32px;
-      padding: 20px 16px;
-      background: #faf7f1;
-      border: 1px solid #e8e1d3;
-      border-radius: 12px;
+    /* ===== VISUAIS ===== */
+    .visual-block { margin:28px 0 32px; padding:20px 16px; background:#faf7f1; border:1px solid #e8e1d3; border-radius:12px; }
+    .visual-block svg { display:block; width:100%; height:auto; max-width:720px; margin:0 auto; }
+    .visual-block .th { font-family:'Montserrat',sans-serif; font-size:16px; font-weight:600; fill:#0b0c0e; }
+    .visual-block .ts { font-family:'Montserrat',sans-serif; font-size:11px; fill:#584e41; }
+    .visual-block svg text { font-family:'Montserrat',sans-serif; }
+    .visual-caption { text-align:center; font-size:13px; color:#584e41; font-style:italic; margin-top:8px; }
+    .visual-block .c-teal rect { fill:#E1F5EE; stroke:#1D9E75; }
+    .visual-block .c-teal text.th { fill:#085041; }
+    .visual-block .c-amber rect { fill:#FAEEDA; stroke:#BA7517; }
+    .visual-block .c-amber text.th { fill:#633806; }
+    .visual-block .c-coral rect { fill:#FAECE7; stroke:#993C1D; }
+    .visual-block .c-coral text.th { fill:#4A1B0C; }
+    .breed-img { display:block; width:100%; max-width:480px; height:260px; object-fit:cover; border-radius:10px; margin:14px 0 24px; box-shadow:0 2px 10px rgba(0,0,0,.10); }
+
+    /* ===== NOVA SIDEBAR (5 seções) ===== */
+    .sidebar-nav-sections { list-style:none; padding:0; margin:0; }
+    .sidebar-nav-sections > li { border-bottom:1px solid rgba(255,255,255,.08); }
+    .sidebar-nav-sections > li > a {
+      display:flex; align-items:center; gap:10px;
+      padding:13px 16px; font-size:13px; font-weight:600;
+      color:#e8ddd0; text-decoration:none; letter-spacing:.02em;
+      transition:background .15s, color .15s;
     }
-    .visual-block svg { display: block; width: 100%; height: auto; max-width: 720px; margin: 0 auto; }
-    .visual-block .th { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 600; fill: #0b0c0e; }
-    .visual-block .ts { font-family: 'Montserrat', sans-serif; font-size: 11px; fill: #584e41; }
-    .visual-block svg text { font-family: 'Montserrat', sans-serif; }
-    .visual-caption {
-      text-align: center;
-      font-size: 13px;
-      color: #584e41;
-      font-style: italic;
-      margin-top: 8px;
+    .sidebar-nav-sections > li > a:hover { background:rgba(255,255,255,.06); color:#fff; }
+    .sidebar-nav-sections > li > a.active { background:rgba(210,94,20,.18); color:#D25E14; border-left:3px solid #D25E14; }
+    .sidebar-nav-sections .sec-icon { font-size:16px; flex-shrink:0; }
+    .sidebar-nav-sections .sec-badge {
+      margin-left:auto; font-size:10px; font-weight:700; letter-spacing:.05em;
+      padding:2px 7px; border-radius:20px; text-transform:uppercase;
     }
-    /* Imagens de raças */
-    .breed-img {
-      display: block;
-      width: 100%;
-      max-width: 480px;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin: 14px 0 24px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+    .badge-available { background:#1D9E75; color:#fff; }
+    .badge-soon { background:rgba(255,255,255,.12); color:#a09480; }
+
+    /* Sub-nav interno do Conteúdo Teórico */
+    .theory-subnav { list-style:none; padding:0; margin:0; background:rgba(0,0,0,.15); }
+    .theory-subnav li a {
+      display:block; padding:8px 16px 8px 42px; font-size:12px;
+      color:#a09480; text-decoration:none; transition:color .15s, background .15s;
     }
-    /* Cores das caixas do diagrama de ciclos */
-    .visual-block .c-teal rect { fill: #E1F5EE; stroke: #1D9E75; }
-    .visual-block .c-teal text.th { fill: #085041; }
-    .visual-block .c-amber rect { fill: #FAEEDA; stroke: #BA7517; }
-    .visual-block .c-amber text.th { fill: #633806; }
-    .visual-block .c-coral rect { fill: #FAECE7; stroke: #993C1D; }
-    .visual-block .c-coral text.th { fill: #4A1B0C; }
+    .theory-subnav li a:hover { color:#e8ddd0; background:rgba(255,255,255,.04); }
+    .theory-subnav li a.active { color:#D25E14; }
+    .theory-subnav { display:none; }
+    .theory-subnav.open { display:block; }
+
+    /* ===== SEÇÕES PRINCIPAIS DO CONTEÚDO ===== */
+    .module-section { display:none; }
+    .module-section.active { display:block; }
+
+    /* Cabeçalho de seção */
+    .section-hero {
+      background:linear-gradient(135deg,#1a1208 0%,#2a1e0e 100%);
+      border:1px solid rgba(210,94,20,.2);
+      border-radius:14px; padding:32px 36px; margin-bottom:32px;
+    }
+    .section-hero .sec-number { font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#D25E14; margin-bottom:8px; }
+    .section-hero h2 { font-size:26px; font-weight:700; color:#fff; margin:0 0 10px; }
+    .section-hero p { color:#a09480; font-size:15px; margin:0; line-height:1.6; }
+
+    /* Card de "em breve" */
+    .coming-soon-card {
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      gap:16px; padding:60px 32px; border:2px dashed rgba(210,94,20,.25);
+      border-radius:14px; text-align:center; background:rgba(210,94,20,.04);
+    }
+    .coming-soon-card .cs-icon { font-size:48px; opacity:.5; }
+    .coming-soon-card h3 { font-size:20px; color:#e8ddd0; margin:0; }
+    .coming-soon-card p { color:#a09480; font-size:14px; margin:0; max-width:360px; line-height:1.6; }
+
+    /* Card de nivelamento */
+    .test-card {
+      background:linear-gradient(135deg,#0f1a0f 0%,#152010 100%);
+      border:1px solid rgba(29,158,117,.3); border-radius:14px;
+      padding:36px; display:flex; gap:32px; align-items:flex-start;
+    }
+    .test-card-icon { font-size:48px; flex-shrink:0; }
+    .test-card-body h3 { font-size:22px; color:#fff; margin:0 0 10px; }
+    .test-card-body p { color:#a09480; font-size:14px; line-height:1.7; margin:0 0 24px; }
+    .test-card-body .btn-test {
+      display:inline-flex; align-items:center; gap:8px;
+      background:#1D9E75; color:#fff; font-weight:700; font-size:14px;
+      padding:13px 28px; border-radius:8px; text-decoration:none;
+      transition:background .15s, transform .1s;
+    }
+    .test-card-body .btn-test:hover { background:#167a5a; transform:translateY(-1px); }
+
+    /* Slides iframe */
+    .slides-container { border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,.1); }
+    .slides-container iframe { display:block; width:100%; height:520px; border:none; }
+    .slides-note { margin-top:12px; font-size:13px; color:#a09480; font-style:italic; }
   </style>
 </head>
 <body>
@@ -61,7 +114,6 @@
       <ul class="nav-links">
         <li><a href="index.html">Início</a></li>
         <li><a href="modulo-1.html" class="active">Módulo 1</a></li>
-        <li><a href="https://script.google.com/macros/s/AKfycbxOD1wcf5c_QdRE5Ip-GUxKuM74ZlF1mr5jHVO_xcgZ3W2bMSboMw-E0bTqbYvNx8rB/exec" target="_blank">Testes</a></li>
       </ul>
     </div>
   </header>
@@ -69,27 +121,76 @@
   <!-- LAYOUT -->
   <div class="module-layout">
 
-    <!-- SIDEBAR -->
+    <!-- SIDEBAR — 5 seções principais -->
     <aside class="sidebar">
       <div class="sidebar-header">
         <a href="index.html" class="back-link">← Voltar ao início</a>
         <h3>Módulo 01</h3>
         <p>O DNA da Pecuária de Lucro</p>
       </div>
-      <ul class="sidebar-nav">
-        <li><a href="#s1-1" class="active">1.1 Fundamentos Raciais</a></li>
-        <li><a href="#s1-2">1.2 Ciclos e Mercados</a></li>
-        <li><a href="#s1-3">1.3 Glossário da Pecuária</a></li>
-        <li><a href="#s1-4">1.4 Personas dos Pecuaristas</a></li>
-        <li><a href="#s1-5">1.5 Geografia da Oportunidade</a></li>
-        <li><a href="#s1-6">1.6 Tipologia e Qualidade</a></li>
-        <li><a href="#s1-7">1.7 Mercados</a></li>
-        <li><a href="#s1-8">1.8 Fatores Críticos de Decisão</a></li>
-        <li><a href="#s1-9">1.9 Ciclo Pecuário e Preços</a></li>
+
+      <ul class="sidebar-nav-sections">
+
+        <!-- 1. Nivelamento -->
+        <li>
+          <a href="#" class="active" onclick="showSection('nivelamento',this);return false;">
+            <span class="sec-icon">📋</span>
+            Teste de Nivelamento
+            <span class="sec-badge badge-available">Disponível</span>
+          </a>
+        </li>
+
+        <!-- 2. Vídeo -->
+        <li>
+          <a href="#" onclick="showSection('video',this);return false;">
+            <span class="sec-icon">🎬</span>
+            Vídeo Introdutório
+            <span class="sec-badge badge-soon">Em breve</span>
+          </a>
+        </li>
+
+        <!-- 3. Conteúdo Teórico (com sub-nav expansível) -->
+        <li>
+          <a href="#" onclick="showSection('teoria',this);toggleSubnav();return false;">
+            <span class="sec-icon">📖</span>
+            Conteúdo Teórico
+            <span class="sec-badge badge-available">Disponível</span>
+          </a>
+          <ul class="theory-subnav" id="theory-subnav">
+            <li><a href="#s1-1" onclick="scrollTo('s1-1')">1.1 Fundamentos Raciais</a></li>
+            <li><a href="#s1-2" onclick="scrollTo('s1-2')">1.2 Ciclos e Mercados</a></li>
+            <li><a href="#s1-3" onclick="scrollTo('s1-3')">1.3 Glossário da Pecuária</a></li>
+            <li><a href="#s1-4" onclick="scrollTo('s1-4')">1.4 Personas dos Pecuaristas</a></li>
+            <li><a href="#s1-5" onclick="scrollTo('s1-5')">1.5 Geografia da Oportunidade</a></li>
+            <li><a href="#s1-6" onclick="scrollTo('s1-6')">1.6 Tipologia e Qualidade</a></li>
+            <li><a href="#s1-7" onclick="scrollTo('s1-7')">1.7 Mercados</a></li>
+            <li><a href="#s1-8" onclick="scrollTo('s1-8')">1.8 Fatores Críticos</a></li>
+            <li><a href="#s1-9" onclick="scrollTo('s1-9')">1.9 Ciclo Pecuário e Preços</a></li>
+          </ul>
+        </li>
+
+        <!-- 4. Slides -->
+        <li>
+          <a href="#" onclick="showSection('slides',this);return false;">
+            <span class="sec-icon">🖥️</span>
+            Apresentação de Slides
+            <span class="sec-badge badge-available">Disponível</span>
+          </a>
+        </li>
+
+        <!-- 5. Teste Final -->
+        <li>
+          <a href="#" onclick="showSection('testef',this);return false;">
+            <span class="sec-icon">🏆</span>
+            Teste Final
+            <span class="sec-badge badge-soon">Em breve</span>
+          </a>
+        </li>
+
       </ul>
     </aside>
 
-    <!-- CONTENT -->
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="content">
 
       <!-- HEADER DO MÓDULO -->
@@ -98,6 +199,48 @@
         <h1>O DNA da Pecuária de Lucro</h1>
         <p class="intro">Os fundamentos técnicos que transformam qualquer membro do time em um especialista respeitado pelo pecuarista. Dominar este módulo é o pré-requisito para tudo que vem depois.</p>
       </div>
+
+      <!-- ═══ SEÇÃO 1: TESTE DE NIVELAMENTO ═══ -->
+      <div class="module-section active" id="sec-nivelamento">
+        <div class="section-hero">
+          <div class="sec-number">Seção 01</div>
+          <h2>Teste de Nivelamento</h2>
+          <p>Antes de começar o conteúdo, faça o teste de nivelamento para medirmos seu ponto de partida. Sem pressão — o objetivo é identificar o que você já sabe sobre pecuária.</p>
+        </div>
+        <div class="test-card">
+          <div class="test-card-icon">📋</div>
+          <div class="test-card-body">
+            <h3>Teste de Nivelamento — Módulo 1</h3>
+            <p>Este teste avalia seu conhecimento inicial sobre raças bovinas, ciclos da pecuária, geografia de MT e RO, glossário técnico e mercados. Responda com honestidade — os resultados são individuais e servem apenas para mapear o aprendizado da equipe.</p>
+            <p>⏱ Duração estimada: 10 a 15 minutos</p>
+            <a class="btn-test" href="https://script.google.com/macros/s/AKfycbxOD1wcf5c_QdRE5Ip-GUxKuM74ZlF1mr5jHVO_xcgZ3W2bMSboMw-E0bTqbYvNx8rB/exec" target="_blank">
+              ✏️ Iniciar Teste de Nivelamento
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ SEÇÃO 2: VÍDEO INTRODUTÓRIO ═══ -->
+      <div class="module-section" id="sec-video">
+        <div class="section-hero">
+          <div class="sec-number">Seção 02</div>
+          <h2>Vídeo Introdutório</h2>
+          <p>Uma visão geral do módulo em formato de vídeo para você entender o contexto antes de mergulhar no conteúdo teórico.</p>
+        </div>
+        <div class="coming-soon-card">
+          <div class="cs-icon">🎬</div>
+          <h3>Vídeo em produção</h3>
+          <p>O vídeo introdutório do Módulo 1 estará disponível em breve. Continue pelo conteúdo teórico enquanto isso.</p>
+        </div>
+      </div>
+
+      <!-- ═══ SEÇÃO 3: CONTEÚDO TEÓRICO ═══ -->
+      <div class="module-section" id="sec-teoria">
+        <div class="section-hero">
+          <div class="sec-number">Seção 03</div>
+          <h2>Conteúdo Teórico</h2>
+          <p>O material completo do DNA da Pecuária de Lucro — raças, ciclos, glossário, personas, geografia, qualidade, mercados e formação de preços.</p>
+        </div>
 
       <!-- 1.1 FUNDAMENTOS RACIAIS -->
       <section class="section-block" id="s1-1">
@@ -952,6 +1095,7 @@
       </section>
 
       <!-- 1.9 CICLO PECUÁRIO E PREÇOS -->
+      <!-- 1.9 CICLO PECUÁRIO E PREÇOS -->
       <section class="section-block" id="s1-9">
         <h2>1.9 – O Ciclo Pecuário e a Formação de Preços</h2>
         <p>O ciclo pecuário é um processo plurianual (geralmente de 5 a 7 anos) baseado na <strong>retenção ou descarte de fêmeas</strong>. Como a biologia da vaca não acelera, o mercado reage com atraso às mudanças de preço.</p>
@@ -969,3 +1113,98 @@
         <h4>Fase 2: A Baixa (Descarte de Fêmeas)</h4>
         <ul>
           <li><strong>O Cenário:</strong> A oferta de bezerros (fruto da retenção
+        <!-- NAV INTERNA -->
+        <div class="content-nav">
+          <a href="#" onclick="showSection('nivelamento',document.querySelector('.sidebar-nav-sections li:first-child a'));return false;">← Teste de Nivelamento</a>
+          <a href="#" onclick="showSection('slides',document.querySelector('.sidebar-nav-sections li:nth-child(4) a'));return false;">Apresentação de Slides →</a>
+        </div>
+      </div><!-- /sec-teoria -->
+
+      <!-- ═══ SEÇÃO 4: APRESENTAÇÃO DE SLIDES ═══ -->
+      <div class="module-section" id="sec-slides">
+        <div class="section-hero">
+          <div class="sec-number">Seção 04</div>
+          <h2>Apresentação de Slides</h2>
+          <p>O material do Módulo 1 em formato de apresentação — ideal para revisar rapidamente os conceitos ou usar como referência nas conversas com clientes.</p>
+        </div>
+        <div class="coming-soon-card">
+          <div class="cs-icon">🖥️</div>
+          <h3>Slides disponíveis em breve</h3>
+          <p>Suba o arquivo no Google Slides e compartilhe o link público para ativarmos a visualização aqui.</p>
+        </div>
+        <!-- Quando tiver o link do Google Slides, substitua o coming-soon-card acima por:
+        <div class="slides-container">
+          <iframe src="SEU_LINK_GOOGLE_SLIDES/embed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
+        </div>
+        <p class="slides-note">Use as setas do teclado ou clique nos slides para navegar. Dica: pressione F para tela cheia.</p>
+        -->
+      </div>
+
+      <!-- ═══ SEÇÃO 5: TESTE FINAL ═══ -->
+      <div class="module-section" id="sec-testef">
+        <div class="section-hero">
+          <div class="sec-number">Seção 05</div>
+          <h2>Teste Final</h2>
+          <p>Após estudar o conteúdo, faça o teste final para comprovar seu aprendizado e receber sua certificação do Módulo 1.</p>
+        </div>
+        <div class="coming-soon-card">
+          <div class="cs-icon">🏆</div>
+          <h3>Teste Final em preparação</h3>
+          <p>O teste final do Módulo 1 estará disponível em breve. Conclua o conteúdo teórico e fique de olho!</p>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Academia <strong>Gado Certo</strong> · Uso interno · Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    /* ── Navegação entre seções ── */
+    function showSection(id, clickedLink) {
+      // Esconde todas as seções
+      document.querySelectorAll('.module-section').forEach(s => s.classList.remove('active'));
+      // Mostra a seção alvo
+      document.getElementById('sec-' + id).classList.add('active');
+      // Atualiza sidebar
+      document.querySelectorAll('.sidebar-nav-sections > li > a').forEach(a => a.classList.remove('active'));
+      if (clickedLink) clickedLink.classList.add('active');
+      // Scroll ao topo do conteúdo
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /* ── Sub-nav do Conteúdo Teórico ── */
+    function toggleSubnav() {
+      const subnav = document.getElementById('theory-subnav');
+      subnav.classList.toggle('open');
+    }
+
+    /* ── Scroll spy dentro da seção teoria ── */
+    const sections = document.querySelectorAll('.section-block');
+    const subLinks = document.querySelectorAll('.theory-subnav a');
+
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          subLinks.forEach(a => a.classList.remove('active'));
+          const id = entry.target.getAttribute('id');
+          const active = document.querySelector(`.theory-subnav a[href="#${id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+
+    sections.forEach(s => spy.observe(s));
+
+    /* ── Abre sub-nav automaticamente se teoria já está ativa ── */
+    window.addEventListener('DOMContentLoaded', () => {
+      const teoriaLink = document.querySelector('.sidebar-nav-sections li:nth-child(3) a');
+      // Nada aberto por padrão — usuário vê nivelamento primeiro
+    });
+  </script>
+
+</body>
+</html>
